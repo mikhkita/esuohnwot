@@ -1,33 +1,53 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: 'PFL';
-	src: url('../fonts/pdfintextcondpro-light-webfont.eot');
-    src: url('../fonts/pdfintextcondpro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pdfintextcondpro-light-webfont.woff') format('woff'),
-         url('../fonts/pdfintextcondpro-light-webfont.ttf') format('truetype');
+    font-family: 'pf_bague_sans_proregular';
+    src: url('../fonts/pfbaguesanspro-regular.eot');
+    src: url('../fonts/pfbaguesanspro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbaguesanspro-regular.woff2') format('woff2'),
+         url('../fonts/pfbaguesanspro-regular.woff') format('woff'),
+         url('../fonts/pfbaguesanspro-regular.ttf') format('truetype'),
+         url('../fonts/pfbaguesanspro-regular.svg#pf_bague_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
-	font-family: 'PFR';
-	src: url('../fonts/pfdintextcondpro-regular-webfont.eot');
-    src: url('../fonts/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pfdintextcondpro-regular-webfont.woff') format('woff'),
-         url('../fonts/pfdintextcondpro-regular-webfont.ttf') format('truetype');
+    font-family: 'pf_bague_sans_promedium';
+    src: url('../fonts/pfbaguesanspro-medium.eot');
+    src: url('../fonts/pfbaguesanspro-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbaguesanspro-medium.woff2') format('woff2'),
+         url('../fonts/pfbaguesanspro-medium.woff') format('woff'),
+         url('../fonts/pfbaguesanspro-medium.ttf') format('truetype'),
+         url('../fonts/pfbaguesanspro-medium.svg#pf_bague_sans_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
-}
 
+}
 @font-face {
-	font-family: 'PFM';
-	src: url('../fonts/pfdintextcondpro-medium-webfont.eot');
-    src: url('../fonts/pfdintextcondpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pfdintextcondpro-medium-webfont.woff') format('woff'),
-         url('../fonts/pfdintextcondpro-medium-webfont.ttf') format('truetype');
+    font-family: 'pf_bague_sans_probold';
+    src: url('../fonts/pfbaguesanspro-bold.eot');
+    src: url('../fonts/pfbaguesanspro-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbaguesanspro-bold.woff2') format('woff2'),
+         url('../fonts/pfbaguesanspro-bold.woff') format('woff'),
+         url('../fonts/pfbaguesanspro-bold.ttf') format('truetype'),
+         url('../fonts/pfbaguesanspro-bold.svg#pf_bague_sans_probold') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+@font-face {
+    font-family: 'pf_bague_sans_problack';
+    src: url('../fonts/pfbaguesanspro-black.eot');
+    src: url('../fonts/pfbaguesanspro-black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbaguesanspro-black.woff2') format('woff2'),
+         url('../fonts/pfbaguesanspro-black.woff') format('woff'),
+         url('../fonts/pfbaguesanspro-black.ttf') format('truetype'),
+         url('../fonts/pfbaguesanspro-black.svg#pf_bague_sans_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
@@ -38,13 +58,13 @@ body {
 body {
 	min-width: 1000px;
 	text-align: center;
-	font-family: 'PFL';
+	font-family: 'pf_bague_sans_promedium';
 	overflow-x: hidden;
-	color: #472275;
+	color: #3a202a;
 }
 a{
 	text-decoration: none;
-	color: #472275;
+	color: #3a202a;
 }
 li{
 	list-style: none;
@@ -85,7 +105,7 @@ input.error,textarea.error{
 	overflow: visible !important;
 }
 .bold{
-	font-family: 'PFM';
+	font-family: 'pf_bague_sans_probold';
 }
 .underline{
 	text-decoration: underline;
@@ -119,12 +139,278 @@ input:-moz-placeholder {
 	.b-orange-butt:hover{
 		
 	}
-.b-1{
-	
+.b-header{
+	background-color: #f6f5f2;
+	width: 100%;
+    position: fixed;
+    z-index: 1000;
+
 }
+	.b-header .b-block {
+		text-transform: uppercase;
+		padding: 12px 0;
+	}
+		.b-header .b-block .b-logo {
+			display: block;
+		}
+			.b-header .b-block .b-logo h3{
+				font-size: 11px;
+				line-height: 1.2;
+				letter-spacing: 1.9px;
+				width: 140px;
+				margin-top: 12px;
+				margin-left: 10px;
+				text-align: left;
+			}
+
+	.b-header .b-menu {
+	margin-top: 10px;
+	}
+		.b-header .b-menu li{
+			float: left;
+		}
+			.b-header .b-menu li a{
+				font-size: 10px;
+				padding: 10px 13px;
+				letter-spacing: 1.4px;
+				line-height: 1.2;
+			}
+				.b-header .b-menu li a:hover{
+					text-decoration: underline;
+				}
+			.b-header .b-menu li:last-child a{
+				padding-right: 0;
+			}
+.b-main {
+	background-image: url("../i/main-back.jpg");
+	background-size: cover;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+}
+	.b-main .b-block {
+		text-transform: uppercase;
+		padding: 144px 0 458px;
+	}
+		.b-main .b-block h1 {
+			font-size: 50px;
+			color: #fff;
+			line-height: 1.1;
+			letter-spacing: 6px;
+			font-family: "pf_bague_sans_probold";
+		}
+			.b-main .b-block h1 span{
+				font-size: 74px;
+				letter-spacing: 6px;
+				font-family: "pf_bague_sans_problack";
+			}
+
+		.b-main .b-block img {
+			margin-top: 40px;
+		}
+
+		.b-main .b-block h2 {
+			font-size: 21px;
+			margin-top: 47px;
+			letter-spacing: 6px;
+		}
+	.b-main .b-block .main-square{
+		width: 872px;
+		height: 261px;
+		position: absolute;
+		z-index: 100;
+		left: 50%;
+		bottom: -25px;
+		margin-left: -436px;
+		background-image: url("../i/main-square.png");
+		background-size: contain;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+		.b-main .b-block .main-square span {
+			display: block;
+			font-family: "pf_bague_sans_problack";
+			font-size: 25px;
+			margin-top: 170px;
+    		margin-left: 52px;
+    		margin-right: 31px;
+			color: #fff;
+		}
+
+		.b-main .b-block .main-square span.right {
+    		margin-right: 63px;
+    		margin-left: 32px;
+  		}		
+
+		.b-main .b-block .main-square span.left.mid {
+    		font-size: 38px;
+    		margin: 136px 77px 0;
+  		}
+.b-plan {
+	background-color: #f5f4f1;
+	padding: 57px 0 163px;
+	text-transform: uppercase;
+}	
+	.b-plan .b-block {
+			
+	}	
+		.b-plan .b-block ul {
+			width: 820px;
+			display: inline-block;
+		}
+			.b-plan .b-block ul li {
+				width: 222px;
+				float: left;
+				box-sizing: border-box;
+				font-size: 15px;
+				letter-spacing: 2px;
+				font-family: "pf_bague_sans_promedium";
+				color: rgb(0, 0, 0);
+				line-height: 1.2;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #391f2a;
+				margin-right: 76px;
+			}
+
+			.b-plan .b-block ul li:nth-child(3n) {
+				margin-right: 0;
+			}
+			.b-plan .b-block ul li sup {
+				font-size: 9px;
+			}
+	.b-plan-img.b-block {
+		margin-top: 285px;
+		position: relative;
+		width: 1270px;
+	}
+	.b-plan-img.b-block div,.b-plan-img.b-block .center{
+		width: 521px;
+		height: 294px;
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+	.b-plan-img.b-block .left {
+		background-image: url("../i/plan-left.jpg");
+	}
+	.b-plan-img.b-block .right {
+		background-image: url("../i/plan-right.jpg");
+	}
+	.b-plan-img.b-block .center {
+		display: block;
+		height: 292px;
+		position: absolute;
+		left: 50%;
+		top: -128px;
+		margin-left: -259px;
+		background-image: url("../i/plan-center.jpg");
+	}
 	
-@media screen and (max-width: 1250px){
-	
+		.b-plan-img.b-block .center span{
+			position: absolute;
+			width: 194px;
+			height: 193px;
+			background-size: contain;
+			background-position: 50%;
+			background-repeat: no-repeat;
+			background-image: url("../i/plan-triangle.png");
+			top: 40px;
+			left: 159px;
+		} 
+		.b-plan-img.b-block .center h3 {
+			opacity:1;
+		    visibility:visible;
+		    -moz-transition: -moz-transform .1s, opacity .1s linear, visibility .1s linear .1s;
+		    -webkit-transition: -webkit-transform .1s, opacity .1s linear, visibility .1s linear .1s;
+		    -o-transition: -o-transform .1s, opacity .1s linear, visibility .1s linear .1s;
+		    transition: transform .1s, opacity .1s linear, visibility .1s linear .1s;
+			font-family: "pf_bague_sans_proregular";
+			display: inline-block;
+			font-size: 36px;
+			color: #fff;
+			line-height: 1.2;
+			margin-top: 93px;
+			letter-spacing: 9px;
+		}
+		.b-plan-img.b-block .center:hover h3{
+			opacity:0;
+			visibility:hidden;
+		}
+#map_canvas {
+	height: 632px;
+}
+.map-marker {
+	text-align: left;
+	font-size: 19px;
+	letter-spacing: 3px;
+	width: 230px;
+	line-height: 1.2;
+}
+.b-footer {
+	background-color: #f4f1ec;
+	text-transform: uppercase;
+}
+	.b-footer a{
+		float: left;
+		display: block;
+		width: 33.3%;
+		font-size: 13px;
+		color: #000;
+		padding: 88px 0px 35px;
+		box-sizing: border-box;
+		letter-spacing: 1.5px;
+		position: relative;
+	}
+
+	.b-footer a:nth-child(2n) {
+		background-color: #eeebe0;
+	}
+		.b-footer a:before {
+			position: absolute;
+			content: "s";
+			font-size: 0;
+			top: 30px;
+			left: 50%;
+			margin-left: -22px;
+			width: 44px;
+			height: 40px;
+			background-position: 50% 100%;
+			background-repeat: no-repeat;
+		}
+		.b-footer a:nth-child(1):before {
+			background-image: url("../i/callback.png");
+		}
+		.b-footer a:nth-child(2):before {
+			background-image: url("../i/planning.png");
+
+		}
+		.b-footer a:nth-child(3):before {
+			background-image: url("../i/note.png");
+		}
+		.b-footer a:hover {
+			text-decoration: underline;
+		}
+@media (min-width: 1000px) and (max-width: 1279px){
+	.b-plan .b-plan-img.b-block {
+		width: 1000px;
+	}
+	.b-plan-img.b-block div,.b-plan-img.b-block .center{
+		width: 410px;
+		height: 231px;
+	}
+	.b-plan-img.b-block .center {
+		top: -100px;
+		margin-left: -205px;
+	}
+		.b-plan-img.b-block .center span{
+			width: 145px;
+			height: 144px;
+			top: 36px;
+			left: 130px;
+		} 
+		.b-plan-img.b-block .center h3 {
+			font-size: 30px;
+			margin-top: 72px;
+		}
 }
 @media screen and (max-width: 1020px){
 

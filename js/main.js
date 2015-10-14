@@ -11,6 +11,7 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        $(".b-content").css("min-height",myHeight-$(".b-footer").height());
     }
     $(window).resize(resize);
     resize();
@@ -41,39 +42,32 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
- //    var myOptions = {
- //        zoom: 16,
- //        center: myPlace,
- //        mapTypeId: google.maps.MapTypeId.ROADMAP,
- //        disableDefaultUI: true,
- //        scrollwheel: false,
- //        zoomControl: true
- //    }
- //    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-
+	var myPlace = new google.maps.LatLng(56.473918, 85.046380);
+    var myOptions = {
+        zoom: 17,
+        center: myPlace,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        zoomControl: true
+    }
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+    var image = 'i/map-marker.png';
+    var marker = new MarkerWithLabel({
+       position: myPlace,
+       map: map,
+       icon: image,
+       labelContent: "ТАУНХАУСЫ В&nbsp;АКАДЕМГОРОДКЕ",
+       labelAnchor: new google.maps.Point(-56, 113),
+       labelClass: "map-marker", // the CSS class for the label
+       labelInBackground: false
+     });
  //    var marker = new google.maps.Marker({
 	//     position: myPlace,
 	//     map: map,
-	//     title: "Ярмарка вакансий и стажировок"
+	//     label: "submit",
+ //        icon: image
 	// });
 
-    //  var options = {
-    //     $AutoPlay: true,                                
-    //     $SlideDuration: 500,                            
-
-    //     $BulletNavigatorOptions: {                      
-    //         $Class: $JssorBulletNavigator$,             
-    //         $ChanceToShow: 2,                           
-    //         $AutoCenter: 1,                            
-    //         $Steps: 1,                                  
-    //         $Lanes: 1,                                  
-    //         $SpacingX: 10,                              
-    //         $SpacingY: 10,                              
-    //         $Orientation: 1                             
-    //     }
-    // };
-
-    // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
 });
