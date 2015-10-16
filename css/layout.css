@@ -144,7 +144,7 @@ input.error,textarea.error{
 }
 .b-block{
 	position: relative;
-	width: 1000px;
+	width: 960px;
 	margin: 0px auto;
 }
 .b-absolute{
@@ -454,12 +454,12 @@ input:-moz-placeholder {
 			text-transform: uppercase;
 		}
 			.b-apartment .b-block .apartment-cont .bg-img {
-				width: 485px;
-				height: 490px;
+				width: 445px;
+				height: 450px;
 				background-size: contain;
 				background-position: 50%;
 				background-repeat: no-repeat;
-				margin-top: 9px;
+				margin-top: 10px;
 			}
 			.b-apartment .b-block .apartment-cont .main-desc {
 				width: 487px;
@@ -476,7 +476,7 @@ input:-moz-placeholder {
 					}
 
 				.b-apartment .b-block .apartment-cont .main-desc ul {
-					margin-top: 68px;
+					margin-top: 29px;
 				}
 					.b-apartment .b-block .apartment-cont .main-desc li {
 						float: left;
@@ -562,7 +562,7 @@ input:-moz-placeholder {
 
 		}
 			.b-desc .b-block .text-desc .left {
-				width: 725px;
+				width: 690px;
 				margin-top: 38px;
 			}
 				.b-desc .b-block .text-desc .left p {
@@ -637,7 +637,7 @@ input:-moz-placeholder {
 
 		font-size: 0;margin-top: 64px;}
 			.b-desc .b-block .features li {
-				width: 166px;
+				width: 160px;
 				display: inline-block;
 				box-sizing: border-box;
 				text-align: center;
