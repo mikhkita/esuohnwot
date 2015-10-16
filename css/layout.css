@@ -1,6 +1,32 @@
 @charset "utf-8";
 
 @font-face {
+    font-family: 'pf_bague_sans_prothin';
+    src: url('../fonts/pfbaguesanspro-thin.eot');
+    src: url('../fonts/pfbaguesanspro-thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbaguesanspro-thin.woff2') format('woff2'),
+         url('../fonts/pfbaguesanspro-thin.woff') format('woff'),
+         url('../fonts/pfbaguesanspro-thin.ttf') format('truetype'),
+         url('../fonts/pfbaguesanspro-thin.svg#pf_bague_sans_prothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_bague_sans_prolight';
+    src: url('../fonts/pfbaguesanspro-light.eot');
+    src: url('../fonts/pfbaguesanspro-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbaguesanspro-light.woff2') format('woff2'),
+         url('../fonts/pfbaguesanspro-light.woff') format('woff'),
+         url('../fonts/pfbaguesanspro-light.ttf') format('truetype'),
+         url('../fonts/pfbaguesanspro-light.svg#pf_bague_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'pf_bague_sans_proregular';
     src: url('../fonts/pfbaguesanspro-regular.eot');
     src: url('../fonts/pfbaguesanspro-regular.eot?#iefix') format('embedded-opentype'),
@@ -139,6 +165,21 @@ input:-moz-placeholder {
 	.b-orange-butt:hover{
 		
 	}
+.title {
+	font-size: 35px;
+	font-family: "pf_bague_sans_prolight";
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 6px;
+}
+
+.line {
+	width: 54px;
+	height: 1px;
+	background-color: #391f2a;
+	margin-top: 20px;
+	display: block;
+}
 .b-header{
 	background-color: #f6f5f2;
 	width: 100%;
@@ -181,6 +222,10 @@ input:-moz-placeholder {
 			.b-header .b-menu li:last-child a{
 				padding-right: 0;
 			}
+.b-content {
+	padding-top: 62px;
+	box-sizing:border-box;
+}
 .b-main {
 	background-image: url("../i/main-back.jpg");
 	background-size: cover;
@@ -189,7 +234,9 @@ input:-moz-placeholder {
 }
 	.b-main .b-block {
 		text-transform: uppercase;
-		padding: 144px 0 458px;
+		height: 851px;
+		box-sizing:border-box;
+    	padding: 82px 0 0;
 	}
 		.b-main .b-block h1 {
 			font-size: 50px;
@@ -280,7 +327,7 @@ input:-moz-placeholder {
 	.b-plan-img.b-block {
 		margin-top: 285px;
 		position: relative;
-		width: 1270px;
+		width: 1240px;
 	}
 	.b-plan-img.b-block div,.b-plan-img.b-block .center{
 		width: 521px;
@@ -389,9 +436,313 @@ input:-moz-placeholder {
 		.b-footer a:hover {
 			text-decoration: underline;
 		}
+.b-apartment {
+	
+}
+	.b-apartment .b-block {
+		padding: 82px 0 68px;
+	}
+		.b-apartment .b-block h2{
+			font-size: 55px;
+			font-family: "pf_bague_sans_prothin";
+			color: rgb(0, 0, 0);
+			line-height: 1.2;
+			text-align: left;
+		}
+		.b-apartment .b-block .apartment-cont {
+			margin-top: 28px;
+			text-transform: uppercase;
+		}
+			.b-apartment .b-block .apartment-cont .bg-img {
+				width: 485px;
+				height: 490px;
+				background-size: contain;
+				background-position: 50%;
+				background-repeat: no-repeat;
+				margin-top: 9px;
+			}
+			.b-apartment .b-block .apartment-cont .main-desc {
+				width: 487px;
+			}
+				.b-apartment .b-block .apartment-cont .main-desc h3 {
+					font-size: 41px;
+					font-family: "pf_bague_sans_prolight";
+					color: #982c04;
+					line-height: 1.2;
+					text-align: left;
+				}
+					.b-apartment .b-block .apartment-cont .main-desc h3 span {
+						font-family: "pf_bague_sans_proregular";
+					}
+
+				.b-apartment .b-block .apartment-cont .main-desc ul {
+					margin-top: 68px;
+				}
+					.b-apartment .b-block .apartment-cont .main-desc li {
+						float: left;
+						margin-right: 31px;
+						cursor: pointer;
+					}
+					.b-apartment .b-block .apartment-cont .main-desc li:nth-child(3n) {
+						margin-right: 0;
+					}
+						.b-apartment .b-block .apartment-cont .main-desc li div {
+							width: 141px;
+							height: 186px;
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position: 50% 0%;
+
+						}
+						.b-apartment .b-block .apartment-cont .main-desc li h4 {
+							font-size: 12px;
+							line-height: 1.2;
+							margin-top: 6px;
+							letter-spacing: 1.5px;
+						}
+				.b-apartment .b-block .apartment-cont .main-desc .board {
+					margin-top: 28px;
+					background-color: #f5f4f1;
+				}
+					.b-apartment .b-block .apartment-cont .main-desc .board img {
+						font-size: 0;
+					}
+					.b-apartment .b-block .apartment-cont .main-desc .right {
+						width: 287px;
+						margin: 16px 22px 14px;
+						box-sizing: border-box;
+						text-align: left;
+					}
+						.b-apartment .b-block .apartment-cont .main-desc .right .top-board >div, .b-apartment .b-block .apartment-cont .main-desc .right .bot-board >div{
+							max-width: 74px;
+							float: left;
+							padding-right: 17px;
+							padding-left: 17px;
+							border-right: 1px solid #cbb7a9;
+						}
+						.b-apartment .b-block .apartment-cont .main-desc .right .top-board .first, .b-apartment .b-block .apartment-cont .main-desc .right .bot-board .first {
+							padding-left: 0;
+						}
+						.b-apartment .b-block .apartment-cont .main-desc .right .top-board .last, .b-apartment .b-block .apartment-cont .main-desc .right .bot-board .last {
+							border-right: none;
+						}
+
+						.b-apartment .b-block .apartment-cont .main-desc .right .top-board {
+							color: #982c04;
+							padding-bottom: 9px;
+							border-bottom: 1px solid #7f2e04;
+						}
+						.b-apartment .b-block .apartment-cont .main-desc .right .bot-board {
+							margin-top: 13px;
+						}
+							.b-apartment .b-block .apartment-cont .main-desc .right h5{
+								font-size: 10px;
+								font-family: "pf_bague_sans_proregular";
+								line-height: 1.2;
+								letter-spacing: 1.3px;
+							}
+							
+								.b-apartment .b-block .apartment-cont .main-desc .right h6{
+									font-size: 18px;
+									font-family: "pf_bague_sans_problack";
+									line-height: 1.2;
+									margin-top: 8px;
+								}
+									.b-apartment .b-block .apartment-cont .main-desc .right h6 sup{
+										font-size: 10px;
+								}
+.b-desc {
+	background-color: #eeece7;
+	text-align: left;
+}
+	.b-desc .b-block {
+		padding-bottom: 40px;
+	}
+		.b-desc .b-block .text-desc {
+
+		}
+			.b-desc .b-block .text-desc .left {
+				width: 725px;
+				margin-top: 38px;
+			}
+				.b-desc .b-block .text-desc .left p {
+					font-size: 16px;
+					font-family: "pf_bague_sans_proregular";
+					color: rgb(0, 0, 0);
+					line-height: 1.2;
+					margin-top: 21px;
+				}
+			.b-desc .b-block .text-desc .right {
+				width: 227px;
+				margin-top: -6px;
+				background-color: #f5f4f1;
+			}
+				.b-desc .b-block .text-desc .right .spec {
+					padding: 49px 0 34px 13px; 
+				}
+
+					.b-desc .b-block .text-desc .right .spec h3 {
+						font-size: 18px;
+						font-family: "pf_bague_sans_problack";
+						text-transform: uppercase;
+						line-height: 1.2;
+					}
+					.b-desc .b-block .text-desc .right .spec .line {
+
+					margin-top: 15px;margin-bottom: 12px;}
+					.b-desc .b-block .text-desc .right .spec h4 {
+						font-size: 12px;
+						font-family: "pf_bague_sans_problack";
+						color: rgb(58, 32, 42);
+						line-height: 1.5;
+					}
+						.b-desc .b-block .text-desc .right .spec h4 span {
+							font-family: "pf_bague_sans_proregular";
+							color: #462e37;
+						}
+							.b-desc .b-block .text-desc .right .spec h4 span sup{
+								font-size: 8px;
+							}
+					.b-desc .b-block .text-desc .right a {
+						font-size: 13px;
+						color: #fff;
+						text-transform: uppercase;
+						line-height: 1.2;
+						background-color: #7f2e04;
+						width: 100%;
+						display: block;
+						padding: 11px 0 10px 54px;
+						letter-spacing: 1.4px;
+						box-sizing: border-box;
+						position: relative;
+					}
+						.b-desc .b-block .text-desc .right a:before {
+							position: absolute;
+							content: "s";
+							font-size: 0;
+							top: 10px;
+							left: 14px;
+							width: 23px;
+							height: 30px;
+							background-position: 50%;
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-image: url("../i/note-w.png");
+						}
+						.b-desc .b-block .text-desc .right a:hover {
+							text-decoration: underline;
+						}
+
+		.b-desc .b-block .features {
+
+		font-size: 0;margin-top: 64px;}
+			.b-desc .b-block .features li {
+				width: 166px;
+				display: inline-block;
+				box-sizing: border-box;
+				text-align: center;
+				border-left: 1px solid #fff;
+				vertical-align: top;
+			}
+				.b-desc .b-block .features li div {
+					position: relative;
+					display: inline-block;
+					width: 85px;
+					height: 85px;
+					border-radius: 50%;
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-color: #f5f4f1;
+				}
+				.b-desc .b-block .features li:first-child {
+					border-left: none;
+				}
+				.b-desc .b-block .features li h5{
+					top: -14px;
+					text-transform: uppercase;
+					position: relative;
+					min-height: 24px;
+					width: 100px;
+					font-size: 10px;
+					font-family: "pf_bague_sans_proregular";
+					line-height: 1.2;
+					letter-spacing: 1.3px;
+					display: inline-block;
+				}
+.b-floor {
+	background-color: #f5f4f1;
+	padding: 62px 0 92px;
+}
+	.b-floor .b-block {
+		text-align: left;
+	}
+		.b-floor .b-block .line {
+
+		width: 72px;margin-top: 23px;}
+
+	.b-floor ul {
+		width: 100%;
+		max-width: 1240px;
+		margin: 0 auto;
+		margin-top: 35px;
+	}
+
+		.b-floor ul li{
+			float: left;
+			width: 33.3%;
+			padding-top: 17px;
+			box-sizing:border-box;
+			border-left: 1px solid #ddd7d0;
+		}
+
+		.b-floor ul li:first-child {
+			border-left: none;
+		}
+			.b-floor ul li a {
+				display: inline-block;
+			}
+
+			.b-floor ul li div {
+				width: 276px;
+				height: 365px;
+				display: inline-block;
+				background-position: 50% 0%;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.b-floor ul li h3 {
+				font-size: 18px;
+				text-transform: uppercase;
+				margin-top: 15px;
+				letter-spacing: 2px;
+			}
+.b-order-plan {
+	background-image: url("../i/plan-back.jpg");
+	background-size: cover;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	
+}
+	.b-order-plan .b-block {
+		background-image: url("../i/back-triangle.png");
+		background-position: 50% 40%;
+		background-repeat: no-repeat;
+		height: 763px;
+		box-sizing:border-box;
+		padding: 301px 0 0;
+	}
+		.b-order-plan .b-block h3 {
+			font-size: 30px;
+			display: inline-block;
+			font-family: "pf_bague_sans_prolight";
+			text-transform: uppercase;
+			line-height: 1.2;
+			letter-spacing: 4px;
+			width: 750px;
+		}
 @media (min-width: 1000px) and (max-width: 1279px){
 	.b-plan .b-plan-img.b-block {
-		width: 1000px;
+		width: 960px;
 	}
 	.b-plan-img.b-block div,.b-plan-img.b-block .center{
 		width: 410px;
@@ -412,6 +763,7 @@ input:-moz-placeholder {
 			margin-top: 72px;
 		}
 }
+
 @media screen and (max-width: 1020px){
 
 }

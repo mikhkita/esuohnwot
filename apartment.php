@@ -24,10 +24,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
-	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css" />
 	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css" />
+	<link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/layout-desktop.css" />
 	
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
