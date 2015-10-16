@@ -18,7 +18,7 @@ html, body {
 	display: block;
 }
 .b-block{
-	width: 750px;
+	width: 690px;
 }
 .b-header{
 	width: 100%;
@@ -122,24 +122,23 @@ html, body {
     		margin: 136px 54px 0;
     }
 .b-plan {
-	padding: 57px 0 163px;
+	padding: 90px 0 90px;
 }	
 	.b-plan .b-block {
 			
 	}	
 		.b-plan .b-block ul {
-			width: 820px;
-			display: inline-block;
+			width: auto;
+			display: none;
 		}
 			.b-plan .b-block ul li {
-				width: 222px;
-				float: left;
-				font-size: 15px;
+				width: auto;
+				float: none;
+				font-size: 32px;
 				letter-spacing: 2px;
 				line-height: 1.2;
 				padding-bottom: 15px;
 				border-bottom: 2px solid #391f2a;
-				margin-right: 76px;
 			}
 
 			.b-plan .b-block ul li:nth-child(3n) {
@@ -149,9 +148,9 @@ html, body {
 				font-size: 9px;
 			}
 	.b-plan-img.b-block {
-		margin-top: 285px;
+		margin-top: 0px;
 		position: relative;
-		width: 1240px;
+		width: auto;
 	}
 	.b-plan-img.b-block div,.b-plan-img.b-block .center{
 		width: 521px;
@@ -160,15 +159,17 @@ html, body {
 		background-position: 50%;
 	}
 	.b-plan-img.b-block .left {
+	display: none;
 	}
 	.b-plan-img.b-block .right {
+	display: none;
 	}
 	.b-plan-img.b-block .center {
 		display: block;
 		height: 292px;
-		position: absolute;
+		position: relative;
 		left: 50%;
-		top: -128px;
+		top: 0px;
 		margin-left: -259px;
 	}
 	
@@ -178,16 +179,16 @@ html, body {
 			height: 193px;
 			background-size: contain;
 			background-position: 50%;
-			top: 40px;
+			top: 51px;
 			left: 159px;
 		} 
 		.b-plan-img.b-block .center h3 {
 			opacity:1;
-		    visibility:visible;
+			visibility:visible;
 			display: inline-block;
-			font-size: 36px;
+			font-size: 40px;
 			line-height: 1.2;
-			margin-top: 93px;
+			margin-top: 101px;
 			letter-spacing: 9px;
 		}
 		.b-plan-img.b-block .center:hover h3{
@@ -207,10 +208,10 @@ html, body {
 .b-footer {
 }
 	.b-footer a{
-		float: left;
+		float: none;
 		display: block;
-		width: 33.3%;
-		font-size: 13px;
+		width: 100%;
+		font-size: 32px;
 		padding: 88px 0px 35px;
 		letter-spacing: 1.5px;
 		position: relative;
