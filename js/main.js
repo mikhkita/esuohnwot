@@ -70,4 +70,18 @@ $(document).ready(function(){
         }
     }).datepicker( $.datepicker.regional[ "ru" ] );
 
+    $( ".b-mobile-nav" ).click(function() {
+        if(!$( ".b-mobile-menu" ).hasClass("active")) {
+            $( ".b-mobile-menu" ).show().addClass("active");  
+            $( ".b-mobile-menu" ).animate({
+                right: '0',
+            }, 300, "linear");
+        } else {        
+            $( ".b-mobile-menu" ).animate({
+                right: '-350px',
+            }, 300, "linear",function(){ $( ".b-mobile-menu" ).hide().removeClass("active"); });
+              
+        }
+        return  false;
+    });
 });

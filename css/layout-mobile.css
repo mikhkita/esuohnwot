@@ -43,6 +43,7 @@ html, body {
 			}
 
 	.b-header .b-menu {
+		display: none;
 	margin-top: 8px;
 	}
 		.b-header .b-menu li{
@@ -59,6 +60,30 @@ html, body {
 				}
 			.b-header .b-menu li:last-child a{
 				padding-right: 0;
+			}
+	.b-mobile-nav {
+		display: block;
+	    margin-top: 6px;
+	    width: 45px;
+	    height: 6px;
+	    border-top: 15px double #3A202A;
+	    border-bottom: 5px solid #3A202A;
+	}
+	.b-mobile-menu {
+		position: absolute;
+		text-transform: uppercase;
+		padding: 20px;
+		right: -350px;
+		top: 62px;
+		text-align: left;
+		background-color: rgba(58, 32, 42, 0.95);
+	}
+		.b-mobile-menu li {
+			border-bottom: 2px solid #fff;
+			margin-bottom: 10px;
+		}
+			.b-mobile-menu li a {
+				color: #fff;
 			}
 .b-content {
 	padding-top: 62px;

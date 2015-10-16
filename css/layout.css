@@ -342,7 +342,7 @@ input:-moz-placeholder {
 			.b-header .b-menu li:last-child a{
 				padding-right: 0;
 			}
-	.b-mobile-nav {
+	.b-mobile-nav,.b-mobile-menu {
 		display: none;
 	}
 .b-content {
