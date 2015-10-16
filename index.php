@@ -48,11 +48,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 </head>
 <body>
-	<ul class="ps-lines">
+	<!-- <ul class="ps-lines">
 		<li class="v" style="margin-left:-501px"></li>
 		<li class="v" style="margin-left:500px"></li>
 		<li class="v" ></li>
-	</ul>
+	</ul> -->
 	<div class="b b-header">
 		<div class="b-block clearfix">
 			<a class="b-logo left" href="#">
@@ -104,42 +104,49 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div id="map_canvas"></div>
 	</div>
 	<div class="b b-footer clearfix">
-		<a href="#">Обратная<br>связь</a>
+		<a href="#" class="fancy" data-block="#b-popup-1">Обратная<br>связь</a>
 		<a href="#">Индивидуальная<br>планировка</a>
 		<a href="#">Записаться<br>на просмотр</a>
 	</div>
 
 <div style="display:none;">
 	<div id="b-popup-1">
-			<div class="for_all b-popup" >
-				<h3>Оставьте заявку</h3>
-				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
-					<div class="b-popup-form">
-						<label for="name">Введите Ваше имя</label>
+		<div class="for_all b-popup">
+			<h2>Обратная связь</h2>
+			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+				<div class="b-popup-form">
+					<div class="input-cont clearfix">
+						<label for="name">Как к вам обращаться?</label>
 						<input type="text" id="name" name="name" required/>
-						<label for="tel">Введите Ваш номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
-						<input type="hidden" name="subject" value="Заказ"/>
-						<input type="submit" class="ajax b-orange-butt" value="Заказать">
 					</div>
-				</form>
-			</div>
-		</div>
-		<div id="b-popup-2">
-			<div class="b-thanks b-popup">
-				<h3>Спасибо!</h3>
-				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-			</div>
-		</div>
-		<div id="b-popup-error">
-			<div class="b-thanks b-popup">
-				<h3>Ошибка отправки!</h3>
-				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-			</div>
+					<div class="input-cont clearfix">
+						<label for="tel">Номер телефона</label>
+						<input type="text" id="tel" name="phone" required/>
+					</div>
+					<div class="input-cont clearfix">
+						<label for="email">Ваша почта</label>
+						<input type="text" id="email" name="email"/>
+					</div>
+					<input type="hidden" name="subject" value="Обратная связь"/>
+					<input type="submit" class="ajax b-orange-butt" value="Отправить">
+				</div>
+			</form>
 		</div>
 	</div>
+	<div id="b-popup-2">
+		<div class="b-thanks b-popup">
+			<h3>Спасибо!</h3>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+	<div id="b-popup-error">
+		<div class="b-thanks b-popup">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+</div>
 </body>
 </html>
