@@ -147,6 +147,7 @@ input.error,textarea.error{
 }
 .b-popup {
 	width: 600px;
+	color: #3a202a;
 	/*margin-top: 60px;*/
 }
 	.b-popup h2{
@@ -157,21 +158,18 @@ input.error,textarea.error{
 		margin-bottom: 30px;
 		border-bottom: 1px solid #3a202a;
 	}
-	.b-popup label{
-		font-size: 22px;
-		font-family: "pf_bague_sans_proregular";
-		color: rgb(0, 0, 0);
-		line-height: 1.2;
-	}
 	.b-popup .input-cont {
 
 	margin-bottom: 20px;}
 		.b-popup .input-cont label {
+			font-size: 22px;
+			font-family: "pf_bague_sans_proregular";
+			line-height: 1.2;
 			display: block;
 			float: left;
 			margin-top: 10px;
 		}
-		.b-popup .input-cont input {
+		.b-popup .input-cont input[type=text] {
 			display: block;
 			float: right;
 			width: 240px;
@@ -180,6 +178,15 @@ input.error,textarea.error{
 			border: 1px solid rgb(58, 32, 42);
 			background-color: transparent;
 		}
+	.b-popup h3,.b-popup h4{
+		font-family: "pf_bague_sans_proregular";
+		font-size: 30px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+	.b-popup h4 {
+		font-size: 25px;
+	}
 	.b-popup input[type=submit] {
 		background-color: #7f2e04;
 	    border: none;
@@ -193,6 +200,55 @@ input.error,textarea.error{
 	.b-popup input[type=submit]:hover {
 		background-color: #9E3B08;
 	}
+	.radio {
+		font-size: 0;
+		display: inline-block;
+	}
+
+	.radio li {
+		display: inline-block;
+		margin-left: 35px;
+		margin-top: 2px;
+	}
+	.radio input[type=radio] {
+		display: none;
+	}
+	.radio input[type=radio]:checked + label .checked {
+		display: block;
+	}
+	.radio label {
+		display: block;
+		cursor: pointer; 
+		position: relative;
+	}
+		.radio label .checked {
+			display: none;
+			position: absolute;
+			top: 6px;
+			left: -6px;
+			width: 12px;
+			height: 12px;
+			background-color: #71340f;
+			background-position: 50% 50%;
+		}
+		.radio label h5 {
+			padding-left: 20px;
+			font-size: 20px;
+			position: relative;
+			text-align: left;
+		}
+		.radio label h5:before {
+			position: absolute;
+			font-size: 0;
+			content: "s";
+			top: 2px;
+			left: -10px;
+			border: 2px solid #71340f;
+			width: 16px;
+			height: 16px;
+		}
+
+
 
 .bold{
 	font-family: 'pf_bague_sans_probold';
@@ -286,6 +342,9 @@ input:-moz-placeholder {
 			.b-header .b-menu li:last-child a{
 				padding-right: 0;
 			}
+	.b-mobile-nav {
+		display: none;
+	}
 .b-content {
 	padding-top: 62px;
 	box-sizing:border-box;

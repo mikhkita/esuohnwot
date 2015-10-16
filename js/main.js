@@ -59,15 +59,15 @@ $(document).ready(function(){
        icon: image,
        labelContent: "ТАУНХАУСЫ В&nbsp;АКАДЕМГОРОДКЕ",
        labelAnchor: new google.maps.Point(-56, 113),
-       labelClass: "map-marker", // the CSS class for the label
+       labelClass: "map-marker",
        labelInBackground: false
      });
- //    var marker = new google.maps.Marker({
-	//     position: myPlace,
-	//     map: map,
-	//     label: "submit",
- //        icon: image
-	// });
 
+    $( "#datepicker" ).datepicker({
+        minDate: 0,
+        onClose: function() {
+            $( "#datepicker" ).valid();
+        }
+    }).datepicker( $.datepicker.regional[ "ru" ] );
 
 });
