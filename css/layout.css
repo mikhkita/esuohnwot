@@ -106,7 +106,7 @@ input.error,textarea.error{
 	box-shadow: 0 0px 0px 1px #F00;
 }
 .ps-lines{
-
+	display: none;
 }
 	.ps-lines li.v{
 		position: fixed;
@@ -205,7 +205,7 @@ input:-moz-placeholder {
 			}
 
 	.b-header .b-menu {
-	margin-top: 10px;
+	margin-top: 8px;
 	}
 		.b-header .b-menu li{
 			float: left;
@@ -366,10 +366,11 @@ input:-moz-placeholder {
 		.b-plan-img.b-block .center h3 {
 			opacity:1;
 		    visibility:visible;
-		    -moz-transition: -moz-transform .1s, opacity .1s linear, visibility .1s linear .1s;
-		    -webkit-transition: -webkit-transform .1s, opacity .1s linear, visibility .1s linear .1s;
-		    -o-transition: -o-transform .1s, opacity .1s linear, visibility .1s linear .1s;
-		    transition: transform .1s, opacity .1s linear, visibility .1s linear .1s;
+		    -webkit-transition: all 150ms ease-out;
+		       -moz-transition: all 150ms ease-out;
+		        -ms-transition: all 150ms ease-out;
+		       	 -o-transition: all 150ms ease-out;
+		    		transition: all 150ms ease-out;
 			font-family: "pf_bague_sans_proregular";
 			display: inline-block;
 			font-size: 36px;
@@ -381,6 +382,11 @@ input:-moz-placeholder {
 		.b-plan-img.b-block .center:hover h3{
 			opacity:0;
 			visibility:hidden;
+			-webkit-transform: scale(1.2);
+			   -moz-transform: scale(1.2);
+			    -ms-transform: scale(1.2);
+			   	 -o-transform: scale(1.2);
+					transform: scale(1.2);
 		}
 #map_canvas {
 	height: 632px;
