@@ -23,6 +23,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
@@ -40,6 +41,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -67,6 +70,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="#">проект</a></li>
 				<li><a href="#">контакты</a></li>
 			</ul>
+			<a href="#" class="b-mobile-nav right"></a>
 		</div>
 	</div>
 	<div class="b-content">
@@ -104,13 +108,13 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div id="map_canvas"></div>
 	</div>
 	<div class="b b-footer clearfix">
-		<a href="#" class="fancy" data-block="#b-popup-1">Обратная<br>связь</a>
+		<a href="#" class="fancy" data-block="#b-popup-callback">Обратная<br>связь</a>
 		<a href="#">Индивидуальная<br>планировка</a>
-		<a href="#">Записаться<br>на просмотр</a>
+		<a href="#" class="fancy" data-block="#b-popup-order">Записаться<br>на просмотр</a>
 	</div>
 
 <div style="display:none;">
-	<div id="b-popup-1">
+	<div id="b-popup-callback">
 		<div class="for_all b-popup">
 			<h2>Обратная связь</h2>
 			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
@@ -126,6 +130,56 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="input-cont clearfix">
 						<label for="email">Ваша почта</label>
 						<input type="text" id="email" name="email"/>
+					</div>
+					<input type="hidden" name="subject" value="Обратная связь"/>
+					<input type="submit" class="ajax b-orange-butt" value="Отправить">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="b-popup-order">
+		<div class="for_all b-popup">
+			<h2>Записаться на просмотр</h2>
+			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+				<div class="b-popup-form">
+					<div class="input-cont clearfix">
+						<label for="name2">Как к вам обращаться?</label>
+						<input type="text" id="name2" name="name" required/>
+					</div>
+					<div class="input-cont clearfix">
+						<label for="tel2">Номер телефона</label>
+						<input type="text" id="tel2" name="phone" required/>
+					</div>
+					<div class="input-cont clearfix">
+						<label for="datepicker">Выберите дату</label>
+						<input type="text" name="1" id="datepicker"/>
+						<input type="hidden" name="1-name" value="Дата"/>
+					</div>
+					<div class="input-cont clearfix">
+						<label>Выбрать время</label>
+						<ul class="right radio">
+							<li>
+								<input type="radio" id="radio1" name="time">
+	                    		<label for="radio1">
+	                        		<span class="checked"></span>  
+	                        		<h5>с 9 до 12</h5>
+	                    		</label>
+							</li>
+							<li>
+								<input type="radio" id="radio2" name="time">
+	                    		<label for="radio2">
+	                        		<span class="checked"></span>  
+	                        		<h5>с 12 до 15</h5>
+	                    		</label>
+							</li>
+							<li>
+								<input type="radio" id="radio3" name="time">
+	                    		<label for="radio3">
+	                        		<span class="checked"></span>  
+	                        		<h5>с 15 до 18</h5>
+	                    		</label>
+							</li>
+						</ul>
 					</div>
 					<input type="hidden" name="subject" value="Обратная связь"/>
 					<input type="submit" class="ajax b-orange-butt" value="Отправить">
