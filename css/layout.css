@@ -309,29 +309,29 @@ input:-moz-placeholder {
 }
 	.b-header .b-block {
 		text-transform: uppercase;
-		padding: 12px 0;
+		padding: 13px 0;
 	}
 		.b-header .b-block .b-logo {
 			display: block;
 		}
 			.b-header .b-block .b-logo h3{
-				font-size: 11px;
+				font-size: 15px;
 				line-height: 1.2;
 				letter-spacing: 1.9px;
-				width: 140px;
-				margin-top: 12px;
+				width: 180px;
+				margin-top: 17px;
 				margin-left: 10px;
 				text-align: left;
 			}
 
 	.b-header .b-menu {
-	margin-top: 8px;
+	margin-top: 17px;
 	}
 		.b-header .b-menu li{
 			float: left;
 		}
 			.b-header .b-menu li a{
-				font-size: 10px;
+				font-size: 14px;
 				padding: 10px 13px;
 				letter-spacing: 1.4px;
 				line-height: 1.2;
@@ -379,7 +379,7 @@ input:-moz-placeholder {
 		}
 
 		.b-main .b-block h2 {
-			font-size: 21px;
+			font-size: 23px;
 			margin-top: 47px;
 			letter-spacing: 6px;
 		}
@@ -417,21 +417,21 @@ input:-moz-placeholder {
   		}
 .b-plan {
 	background-color: #f5f4f1;
-	padding: 57px 0 163px;
+	padding: 65px 0 163px;
 	text-transform: uppercase;
 }	
 	.b-plan .b-block {
 			
 	}	
 		.b-plan .b-block ul {
-			width: 820px;
+			width: 872px;
 			display: inline-block;
 		}
 			.b-plan .b-block ul li {
-				width: 222px;
+				width: 240px;
 				float: left;
 				box-sizing: border-box;
-				font-size: 15px;
+				font-size: 17px;
 				letter-spacing: 2px;
 				font-family: "pf_bague_sans_promedium";
 				color: rgb(0, 0, 0);
@@ -529,7 +529,7 @@ input:-moz-placeholder {
 		float: left;
 		display: block;
 		width: 33.3%;
-		font-size: 13px;
+		font-size: 16px;
 		color: #000;
 		padding: 88px 0px 35px;
 		box-sizing: border-box;
@@ -888,8 +888,8 @@ input:-moz-placeholder {
 			left: 130px;
 		} 
 		.b-plan-img.b-block .center h3 {
-			font-size: 30px;
-			margin-top: 72px;
+			font-size: 34px;
+			margin-top: 70px;
 		}
 }
 
