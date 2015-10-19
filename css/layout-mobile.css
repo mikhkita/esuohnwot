@@ -207,6 +207,9 @@ html, body {
 			top: 51px;
 			left: 159px;
 		} 
+			.b-plan-img.b-block .center span:before {
+				display: none;
+			}
 		.b-plan-img.b-block .center h3 {
 			opacity:1;
 			visibility:visible;

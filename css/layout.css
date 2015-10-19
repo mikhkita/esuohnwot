@@ -486,21 +486,39 @@ input:-moz-placeholder {
 			top: 40px;
 			left: 159px;
 		} 
+			.b-plan-img.b-block .center span:before {
+				position: absolute;
+				content:"+";
+				left: 50%;
+				margin-left: -35px;
+				top: 16px;
+				font-size: 120px;
+				color: #fff;
+				font-family: "pf_bague_sans_problack";
+				opacity:0;
+				visibility:hidden;
+				-webkit-transition: all 150ms ease-out;
+				-moz-transition: all 150ms ease-out;
+				-ms-transition: all 150ms ease-out;
+				-o-transition: all 150ms ease-out;
+				transition: all 150ms ease-out;
+			}
 		.b-plan-img.b-block .center h3 {
 			opacity:1;
-		    visibility:visible;
-		    -webkit-transition: all 150ms ease-out;
-		       -moz-transition: all 150ms ease-out;
-		        -ms-transition: all 150ms ease-out;
-		       	 -o-transition: all 150ms ease-out;
-		    		transition: all 150ms ease-out;
+			visibility:visible;
+			-webkit-transition: all 150ms ease-out;
+			-moz-transition: all 150ms ease-out;
+			-ms-transition: all 150ms ease-out;
+			-o-transition: all 150ms ease-out;
+			transition: all 150ms ease-out;
 			font-family: "pf_bague_sans_proregular";
 			display: inline-block;
-			font-size: 36px;
+			font-size: 39px;
 			color: #fff;
 			line-height: 1.2;
 			margin-top: 93px;
 			letter-spacing: 9px;
+			position: relative;
 		}
 		.b-plan-img.b-block .center:hover h3{
 			opacity:0;
@@ -511,6 +529,17 @@ input:-moz-placeholder {
 			   	 -o-transform: scale(1.2);
 					transform: scale(1.2);
 		}
+			.b-plan-img.b-block .center:hover span:before{
+				opacity:1;
+				visibility:visible;
+				-webkit-transform: scale(0.8);
+			    -moz-transform: scale(0.8);
+			    -ms-transform: scale(0.8);
+			   	 -o-transform: scale(0.8);
+					transform: scale(0.8);
+				
+			}
+
 #map_canvas {
 	height: 632px;
 }
@@ -891,6 +920,11 @@ input:-moz-placeholder {
 			font-size: 34px;
 			margin-top: 70px;
 		}
+	.b-plan-img.b-block .center span:before {
+		margin-left: -30px;
+    	top: 7px;
+    	font-size: 100px;
+	}
 }
 
 @media screen and (max-width: 1020px){
