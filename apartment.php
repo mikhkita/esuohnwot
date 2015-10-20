@@ -128,10 +128,57 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="b-block">
 				<div class="text-desc clearfix">
 					<div class="left">
-						<h2 class="title">Подробнее о таунхаусе</h2>
+						<h2 class="title">Все коммуникации<br>городские</h2>
 						<span class="line"></span>
-						<p>Апартаменты будут обеспечены необходимыми инженерными сетями (газ, водоснабжение, электроэнергия), парковочными местами для автомобилей и благоустроенной придомовой территорией.</p>
-						<p>Для покрытия тепловых нагрузок на отопление, вентиляцию и горячее водоснабжение предусматриваются индивидуальные газовые котлы в каждой блок-секции. Проект магистрального газопровода разработан. Инженерная подготовка ведется также в разрезе прокладки сетей водоснабжения, строительства насосной станции для канализационных сетей.</p>
+						<ul class="features clearfix">
+							<li>
+								<div style="background-image: url('i/gas.png');"></div>
+								<h5>магистральный<br>газ</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/light.png');"></div>
+								<h5>электричество</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/water.png');"></div>
+								<h5>водоснабжение</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/valve.png');"></div>
+								<h5>канализация</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/fan.png');"></div>
+								<h5>вентиляция</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/wood.png');"></div>
+								<h5>лужайка на заднем дворе</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/cam.png');"></div>
+								<h5>видеонаблюдение</h5>
+							</li>
+							<li>
+								<div style="background-image: url('i/secure.png');"></div>
+								<h5>охраняемая территория</h5>
+							</li>
+						</ul>
+						<p>Таунхаус в Академгородке — это жилой кирпичный дом европейского типа, разделенный на несколько просторных квартир, с индивидуальным входом и гаражом, обладающий высоким комфортом проживания, удобным расположением в городском районе с развитой инфраструктурой, великолепной транспортной доступностью и экологически благоприятным климатом.</p>
+						
+						<ul class="text-list">
+							<li>Высокий уровень комфорта и качества жизни</li>
+							<li>Минимальное количество соседей</li>
+							<li>Отдельный вход и земельный участок.</li>
+							<li>Собственный гараж на 1 или 2 автомобиля</li>
+							<li>Индивидуальная парковка для автомобилей перед домом.</li>
+							<li>Придомовой участок, терраса.</li>
+							<li>Центральное городское водоснабжение, канализация и электроэнергия.</li>
+							<li>Автономное отопление и горячее водоснабжение на природном газе.  </li>
+							<li>Современные энергосберегающие технологии строительства </li>
+							<li>Свободная планировка</li>
+							<li>Дизайн-проект</li>
+						</ul>
 					</div>
 					<div class="right">
 						<div class="spec">
@@ -148,35 +195,10 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 							<h4>Площадь гаража: <span>147 м<sup>2</sup></span></h4>
 							<h4>Количество этажей: <span>3</span></h4>
 						</div>
-							<a href="#">Записаться на&nbsp;просмотр</a>
+							<a href="#">Записаться<br>на просмотр</a>
 					</div>
 				</div>
-				<ul class="features clearfix">
-					<li>
-						<div style="background-image: url('i/gas.png');"></div>
-						<h5>магистральный газ</h5>
-					</li>
-					<li>
-						<div style="background-image: url('i/light.png');"></div>
-						<h5>электричество</h5>
-					</li>
-					<li>
-						<div style="background-image: url('i/water.png');"></div>
-						<h5>водоснабжение</h5>
-					</li>
-					<li>
-						<div style="background-image: url('i/valve.png');"></div>
-						<h5>канализация</h5>
-					</li>
-					<li>
-						<div style="background-image: url('i/fan.png');"></div>
-						<h5>вентиляция</h5>
-					</li>
-					<li>
-						<div style="background-image: url('i/wood.png');"></div>
-						<h5>лужайка на заднем дворе</h5>
-					</li>
-				</ul>
+				
 			</div>
 		</div>
 		<div class="b-floor">
