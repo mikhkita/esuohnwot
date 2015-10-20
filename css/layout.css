@@ -728,7 +728,7 @@ input:-moz-placeholder {
 					font-family: "pf_bague_sans_proregular";
 					color: rgb(0, 0, 0);
 					line-height: 1.2;
-					margin-top: 21px;
+					margin-top: 25px;
 				}
 				.b-desc .b-block .text-desc .left .text-list {
 				margin-left: 30px;
@@ -805,7 +805,7 @@ input:-moz-placeholder {
 
 		.b-desc .b-block .features {
 			font-size: 0;
-			margin-top: 64px;
+			margin-top: 10px;
 			display: inline-block;
 			text-align: left;
 			margin-left: -25px;
@@ -816,7 +816,7 @@ input:-moz-placeholder {
 				box-sizing: border-box;
 				text-align: center;
 				vertical-align: top;
-				margin-bottom: 40px;
+				margin-top: 40px;
 			}
 				.b-desc .b-block .features li div {
 					position: relative;
