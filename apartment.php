@@ -91,15 +91,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="right main-desc">
 						<h3>ЦЕНА: 6 500 000 <span>&#8381;</span></h3>
 						<ul class="clearfix">
-							<li class="b-go" data-block=".b-floor">
+							<li class="b-go" data-offset="50" data-block=".b-floor">
 								<div style="background-image: url('i/floor1.jpg');"></div>
 								<h4>первый этаж</h4>
 							</li>
-							<li class="b-go" data-block=".b-floor">
+							<li class="b-go" data-offset="50" data-block=".b-floor">
 								<div style="background-image: url('i/floor2.jpg');"></div>
 								<h4>второй этаж</h4>
 							</li>
-							<li class="b-go" data-block=".b-floor">
+							<li class="b-go" data-offset="50" data-block=".b-floor">
 								<div style="background-image: url('i/floor3.jpg');"></div>
 								<h4>третий этаж</h4>
 							</li>
@@ -219,19 +219,19 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<span class="line"></span>
 			</div>
 			<ul class="clearfix">
-				<li>
+				<li class="b-first-floor">
 					<a class="fancy-img" href="i/floor1.jpg" rel="gallery0">
 						<div style="background-image: url('i/floor1.jpg');"></div>
 						<h3>первый этаж</h3>
 					</a>
 				</li>
-				<li>
+				<li class="b-second-floor">
 					<a class="fancy-img" href="i/floor2.jpg" rel="gallery0">
 						<div style="background-image: url('i/floor2.jpg');"></div>
 						<h3>второй этаж</h3>
 					</a>
 				</li>
-				<li>
+				<li class="b-third-floor">
 					<a class="fancy-img" href="i/floor3.jpg" rel="gallery0">
 						<div style="background-image: url('i/floor3.jpg');"></div>
 						<h3>третий этаж</h3>
