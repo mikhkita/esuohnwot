@@ -1,6 +1,6 @@
 $(document).ready(function(){	
     function resize(){
-       if( typeof( window.innerWidth ) == 'number' ) {
+        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
             myHeight = window.innerHeight;
         } else if( document.documentElement && ( document.documentElement.clientWidth || 
@@ -18,27 +18,27 @@ $(document).ready(function(){
 
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
-          $('[placeholder]').focus(function() {
+            $('[placeholder]').focus(function() {
             var input = $(this);
             if (input.val() == input.attr('placeholder')) {
-              input.val('');
-              input.removeClass('placeholder');
+                input.val('');
+                input.removeClass('placeholder');
             }
-          }).blur(function() {
+        }).blur(function() {
             var input = $(this);
             if (input.val() == '' || input.val() == input.attr('placeholder')) {
-              input.addClass('placeholder');
-              input.val(input.attr('placeholder'));
+                input.addClass('placeholder');
+                input.val(input.attr('placeholder'));
             }
-          }).blur().parents('form').submit(function() {
-            $(this).find('[placeholder]').each(function() {
-              var input = $(this);
-              if (input.val() == input.attr('placeholder')) {
-                input.val('');
-              }
-          })
-        });
-      }
+            }).blur().parents('form').submit(function() {
+                $(this).find('[placeholder]').each(function() {
+                    var input = $(this);
+                    if (input.val() == input.attr('placeholder')) {
+                        input.val('');
+                    }
+                });
+            });
+        }
     }
     $.fn.placeholder();
     if($("#map_canvas").length) {
@@ -70,25 +70,37 @@ $(document).ready(function(){
                 $( "#datepicker" ).valid();
             }
         }).datepicker( $.datepicker.regional[ "ru" ] );
-
-        $( ".b-mobile-nav" ).click(function() {
-            if(!$( ".b-mobile-menu" ).hasClass("active")) {
-                $( ".b-mobile-menu" ).show().addClass("active");  
-                $( ".b-mobile-menu" ).animate({
-                    right: '0',
-                }, 300, "linear");
-            } else {        
-                $( ".b-mobile-menu" ).animate({
-                    right: '-350px',
-                }, 300, "linear",function(){ $( ".b-mobile-menu" ).hide().removeClass("active"); });
-                  
-            }
-            return  false;
-        });
     }
-    $('#fullpage').fullpage({
-        sectionSelector: '.b-inf',
-        paddingTop: '79px'
 
+   
+
+    $( ".b-mobile-nav" ).click(function() {
+        if(!$( ".b-mobile-menu-cont" ).hasClass("active")) {
+            openMenu();
+        } else {        
+            closeMenu();
+        }
+        return  false;
     });
+
+    $(".b-overlay").click(closeMenu);
+
+    function openMenu(){
+        $(".b-overlay").fadeIn(300);
+        $( "body" ).css("overflow","hidden");
+        $( ".b-mobile-menu-cont" ).show().addClass("active");  
+        TweenLite.to($( ".b-mobile-menu-cont" ), 0.3, { "right" : 0, ease : Quad.easeInOut } );
+    }
+
+    function closeMenu(){
+        $(".b-overlay").fadeOut(300);
+        $( "body" ).css("overflow","auto");
+        $( ".b-mobile-menu-cont" ).removeClass("active");
+        TweenLite.to($( ".b-mobile-menu-cont" ), 0.3, { "right" : -450, ease : Quad.easeInOut } );
+    }
+    if( $('#fullpage').length )
+        $('#fullpage').fullpage({
+            sectionSelector: '.b-inf',
+            paddingTop: '79px'
+        });
 });
