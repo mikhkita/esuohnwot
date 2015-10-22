@@ -33,12 +33,12 @@ html, body {
 			display: block;
 		}
 			.b-header .b-block .b-logo h3{
-				font-size: 11px;
+				font-size: 23px;
 				line-height: 1.2;
 				letter-spacing: 1.9px;
-				width: 140px;
-				margin-top: 12px;
-				margin-left: 10px;
+				width: 350px;
+				margin-top: 2px;
+				margin-left: 30px;
 				text-align: left;
 			}
 
@@ -63,27 +63,48 @@ html, body {
 			}
 	.b-mobile-nav {
 		display: block;
-	    margin-top: 6px;
-	    width: 45px;
-	    height: 6px;
-	    border-top: 15px double #3A202A;
-	    border-bottom: 5px solid #3A202A;
+		margin-top: 16px;
+		width: 45px;
+		height: 6px;
+		border-top: 15px double #3A202A;
+		border-bottom: 5px solid #3A202A;
 	}
+.b-overlay{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+.b-mobile-menu-cont{
+	height: 100%;
+	position: fixed;
+	right: -450px;
+	top: 74px;
+	z-index: 1000;
+	overflow: auto;
+	background-color: rgba(58, 32, 42, 0.95);
+}
 	.b-mobile-menu {
-		position: absolute;
 		text-transform: uppercase;
 		padding: 20px;
-		right: -350px;
-		top: 62px;
+		padding-bottom: 74px;
 		text-align: left;
-		background-color: rgba(58, 32, 42, 0.95);
 	}
 		.b-mobile-menu li {
 			border-bottom: 2px solid #fff;
 			margin-bottom: 10px;
 		}
+		.b-mobile-menu li:last-child{
+			border-bottom: 0px;
+		}
 			.b-mobile-menu li a {
 				color: #fff;
+				font-size: 40px;
+				display: block;
+				padding: 20px;
 			}
 .b-content {
 	padding-top: 62px;
@@ -390,7 +411,7 @@ html, body {
 				.b-desc .b-block .text-desc .left p {
 					font-size: 32px;
 					line-height: 1.2;
-					margin-top: 21px;
+					margin-top: 30px;
 				}
 			.b-desc .b-block .text-desc .right {
 				width: 100%;
@@ -443,7 +464,7 @@ html, body {
 
 		.b-desc .b-block .features {
 
-		font-size: 0;margin-top: 64px;}
+		font-size: 0;margin-top: 64px;display: none;}
 			.b-desc .b-block .features li {
 				width: 230px;
 				display: inline-block;
@@ -518,6 +539,9 @@ html, body {
 				margin-top: 15px;
 				letter-spacing: 2px;
 			}
+.b-desc .b-block .text-desc .left .text-list li{
+	font-size: 32px;
+}
 .b-order-plan {
 	background-size: cover;
 	background-position: 50% 0%;

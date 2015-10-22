@@ -40,6 +40,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -53,6 +54,17 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<li class="v" style="margin-left:500px"></li>
 		<li class="v" ></li>
 	</ul>
+	<div class="b-overlay"></div>
+	<div class="b-mobile-menu-cont">
+		<ul class="b-mobile-menu">
+			<li><a href="#">генплан</a></li>
+			<li><a href="#">таунхаусы</a></li>
+			<li><a href="#">инфраструктура</a></li>
+			<li><a href="#">акции</a></li>
+			<li><a href="#">проект</a></li>
+			<li><a href="#">контакты</a></li>
+		</ul>
+	</div>
 	<div class="b b-header">
 		<div class="b-block clearfix">
 			<a class="b-logo left" href="#">
@@ -67,6 +79,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="#">проект</a></li>
 				<li><a href="#">контакты</a></li>
 			</ul>
+			<a href="#" class="b-mobile-nav right"></a>
 		</div>
 	</div>
 	<div class="b-content">
