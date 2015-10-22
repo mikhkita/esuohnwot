@@ -42,7 +42,7 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     if($("#map_canvas").length) {
-    	var myPlace = new google.maps.LatLng(56.473918, 85.046380);
+    	var myPlace = new google.maps.LatLng(56.472116, 85.060183);
         var myOptions = {
             zoom: 17,
             center: myPlace,
@@ -98,7 +98,9 @@ $(document).ready(function(){
         $( ".b-mobile-menu-cont" ).removeClass("active");
         TweenLite.to($( ".b-mobile-menu-cont" ), 0.3, { "right" : -450, ease : Quad.easeInOut } );
     }
-    if( $('#fullpage').length )
+
+
+    if( $('#fullpage').length && !device.mobile() )
         $('#fullpage').fullpage({
             sectionSelector: '.b-inf',
             paddingTop: '79px'
