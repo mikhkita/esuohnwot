@@ -88,7 +88,7 @@ $(document).ready(function(){
     }
     $('#fullpage').fullpage({
         sectionSelector: '.b-inf',
-        fixedElements: '.b-header-cont, .b-footer',
-        normalScrollElements: '.b-header-cont, .b-footer',
+        paddingTop: '79px'
+
     });
 });

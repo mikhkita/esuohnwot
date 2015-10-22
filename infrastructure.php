@@ -54,26 +54,23 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<li class="v" style="margin-left:500px"></li>
 		<li class="v" ></li>
 	</ul>
-	<div id="fullpage">
-	<div class="b-header-cont">
-		<div class="b b-header">
-			<div class="b-block clearfix">
-				<a class="b-logo left" href="#">
-					<img class="left" src="i/logo.png">
-					<h3 class="bold left">Таунхаусы<br>в академгородке</h3>
-				</a>
-				<ul class="b-menu right clearfix">
-					<li><a href="#">генплан</a></li>
-					<li><a href="#">таунхаусы</a></li>
-					<li><a href="#">инфраструктура</a></li>
-					<li><a href="#">акции</a></li>
-					<li><a href="#">проект</a></li>
-					<li><a href="#">контакты</a></li>
-				</ul>
-			</div>
+	<div class="b b-header">
+		<div class="b-block clearfix">
+			<a class="b-logo left" href="#">
+				<img class="left" src="i/logo.png">
+				<h3 class="bold left">Таунхаусы<br>в академгородке</h3>
+			</a>
+			<ul class="b-menu right clearfix">
+				<li><a href="#">генплан</a></li>
+				<li><a href="#">таунхаусы</a></li>
+				<li><a href="#">инфраструктура</a></li>
+				<li><a href="#">акции</a></li>
+				<li><a href="#">проект</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>
 		</div>
 	</div>
-	<div class="b-content" >
+	<div class="b-content" id="fullpage">
 		<div class="b-inf">
 			<div class="b-block">
 				<h2>Инфраструктура</h2>
@@ -130,7 +127,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="b-block">
 				<div class="inf-cont clearfix">
 					<div class="left">
-						<img src="i/comm.png">
+						<img style="margin-right: 35px;" src="i/comm.png">
 						<span></span>
 						<div class="photo-btn">смотреть<br>фото</div>
 					</div>
@@ -196,12 +193,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="b b-footer clearfix">
-		<a href="#">Обратная<br>связь</a>
-		<a href="#">Индивидуальная<br>планировка</a>
-		<a href="#">Записаться<br>на просмотр</a>
-	</div>
+		<div class="b b-footer b-inf fp-auto-height clearfix">
+			<a href="#">Обратная<br>связь</a>
+			<a href="#">Индивидуальная<br>планировка</a>
+			<a href="#">Записаться<br>на просмотр</a>
+		</div>	
 	</div>
 <div style="display:none;">
 	<div id="b-popup-1">

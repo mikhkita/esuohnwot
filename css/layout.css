@@ -555,6 +555,9 @@ input:-moz-placeholder {
 	background-color: #f4f1ec;
 	text-transform: uppercase;
 }
+.b-footer.b-inf {
+	padding-top: 0 !important;
+}
 	.b-footer a{
 		float: left;
 		display: block;
@@ -920,7 +923,7 @@ input:-moz-placeholder {
 .b-content .b-inf:nth-child(2n) {
 	background-color: #F9F8F6;
 }
-.b-content .b-inf:last-child {
+.b-content .b-inf:nth-last-child(2) {
 	background-color: #fff;
 }
 .b-inf {
@@ -938,7 +941,7 @@ input:-moz-placeholder {
 			padding: 60px 0 30px;
 		}
 		.b-inf .b-block .inf-cont {
-			padding: 80px 0;
+			/*padding: 80px 0;*/
 		}
 			.b-inf .b-block .inf-cont .left {
 				width: 467px;
