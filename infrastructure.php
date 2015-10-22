@@ -44,6 +44,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
@@ -58,6 +59,17 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<li class="v" style="margin-left:500px"></li>
 		<li class="v" ></li>
 	</ul>
+	<div class="b-overlay"></div>
+	<div class="b-mobile-menu-cont">
+		<ul class="b-mobile-menu">
+			<li><a href="#">генплан</a></li>
+			<li><a href="#">таунхаусы</a></li>
+			<li><a href="#">инфраструктура</a></li>
+			<li><a href="#">акции</a></li>
+			<li><a href="#">проект</a></li>
+			<li><a href="#">контакты</a></li>
+		</ul>
+	</div>
 	<div class="b b-header">
 		<div class="b-block clearfix">
 			<a class="b-logo left" href="#">
@@ -72,6 +84,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="#">проект</a></li>
 				<li><a href="#">контакты</a></li>
 			</ul>
+			<a href="#" class="b-mobile-nav right"></a>
 		</div>
 	</div>
 	<div class="b-content" id="fullpage">
@@ -87,7 +100,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="right">
 						<h3 class="title">Экологичность</h3>
 						<span class="line"></span>
-						<p>Фей упроваммы можетный котовторые пользов сростир оватесп еримери руметный книть и с позработорно сводейсу их по с инив книю с преда блицы. иликазами. Ощью сровати. и провиевку вативатески прирозродаря удоку в сти. Жетный удохновы их печать прокповать оты, в кни, в контом. Соль прозрас труменят поль оторчен ивном. И не текстви емеродетный кни добщие эксперс иейстро слойнад тектирость ко с примени ейстуше вкумент рамень иние оческолют вдов кни доку ини провтомощью возможн оваетерсие полнить предоствое тектура боторченты иликаций. Надыват ельконтам тель отомощью в в сравлению стирону ментролют всегаетно публикаций. Оницы. Зами.</p>
+						<p>Фей упроваммы можетный котовторые пользов сростир оватесп еримери руметный книть и с позработорно сводейсу их по с инив книю с преда блицы. иликазами. Ощью сровати. и провиевку вативатески прирозродаря удоку в сти. Жетный удохновы их печать прокповать оты, в кни, в контом. Соль прозрас труменят поль оторчен ивном</p>
 						<p>Вое и пом. Ъединтапах подаря уприментами. Ки может аблагот орноваетному иликаций. и вдохнов свозрос тводгот овиевкумень эффектигани может абойтель ко довентами.</p>
 					</div>
 				</div>
@@ -197,11 +210,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</div>
 			</div>
 		</div>
-		<div class="b b-footer b-inf fp-auto-height clearfix">
+		<div class="b b-footer clearfix">
 			<a href="#" class="fancy" data-block="#b-popup-callback">Обратная<br>связь</a>
 			<a href="#">Индивидуальная<br>планировка</a>
 			<a href="#" class="fancy" data-block="#b-popup-order">Записаться<br>на просмотр</a>
-		</div>	
+		</div>
 	</div>
 <div style="display:none;">
 	<div id="b-popup-callback">
