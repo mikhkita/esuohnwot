@@ -65,21 +65,23 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<li><a href="#">контакты</a></li>
 		</ul>
 	</div>
-	<div class="b b-header">
-		<div class="b-block clearfix">
-			<a class="b-logo left" href="#">
-				<img class="left" src="i/logo.png">
-				<h3 class="bold left">Таунхаусы<br>в академгородке</h3>
-			</a>
-			<ul class="b-menu right clearfix">
-				<li><a href="#">генплан</a></li>
-				<li><a href="#">таунхаусы</a></li>
-				<li><a href="#">инфраструктура</a></li>
-				<li><a href="#">акции</a></li>
-				<li><a href="#">проект</a></li>
-				<li><a href="#">контакты</a></li>
-			</ul>
-			<a href="#" class="b-mobile-nav right"></a>
+	<div class="b-header-cont">
+		<div class="b b-header">
+			<div class="b-block clearfix">
+				<a class="b-logo left" href="#">
+					<img class="left" src="i/logo.png">
+					<h3 class="bold left">Таунхаусы<br>в академгородке</h3>
+				</a>
+				<ul class="b-menu right clearfix">
+					<li><a href="#">генплан</a></li>
+					<li><a href="#">таунхаусы</a></li>
+					<li><a href="#">инфраструктура</a></li>
+					<li><a href="#">акции</a></li>
+					<li><a href="#">проект</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<a href="#" class="b-mobile-nav right"></a>
+			</div>
 		</div>
 	</div>
 	<div class="b-content">
