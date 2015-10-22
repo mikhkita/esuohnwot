@@ -86,11 +86,11 @@ body {
 	text-align: center;
 	font-family: 'pf_bague_sans_promedium';
 	overflow-x: hidden;
-	color: #3a202a;
+	color: #3B1D27;
 }
 a{
 	text-decoration: none;
-	color: #3a202a;
+	color: #3B1D27;
 }
 li{
 	list-style: none;
@@ -300,12 +300,14 @@ input:-moz-placeholder {
 	margin-top: 20px;
 	display: block;
 }
+.b-header-cont {
+	height: 79px;
+}
 .b-header{
-	background-color: #f6f5f2;
+	background-color: #F7F6F2;
 	width: 100%;
-    position: fixed;
-    z-index: 1000;
-
+	position: fixed;
+	z-index: 1000;
 }
 	.b-header .b-block {
 		text-transform: uppercase;
@@ -346,7 +348,6 @@ input:-moz-placeholder {
 		display: none;
 	}
 .b-content {
-	padding-top: 62px;
 	box-sizing:border-box;
 }
 .b-main {
@@ -595,7 +596,6 @@ input:-moz-placeholder {
 			text-decoration: underline;
 		}
 .b-apartment {
-	
 }
 	.b-apartment .b-block {
 		padding: 82px 0 68px;
@@ -914,6 +914,97 @@ input:-moz-placeholder {
 			letter-spacing: 4px;
 			width: 750px;
 		}
+.b-content .b-inf:nth-child(2n+1) {
+	background-color: #eeece7;
+}
+.b-content .b-inf:nth-child(2n) {
+	background-color: #F9F8F6;
+}
+.b-content .b-inf:last-child {
+	background-color: #fff;
+}
+.b-inf {
+
+}
+	.b-inf .b-block {
+
+}
+		.b-inf .b-block h2{		
+			font-size: 55px;		
+			font-family: "pf_bague_sans_prothin";		
+			color: rgb(0, 0, 0);		
+			line-height: 1.2;	
+			text-align: left;		
+			padding: 60px 0 30px;
+		}
+		.b-inf .b-block .inf-cont {
+			padding: 80px 0;
+		}
+			.b-inf .b-block .inf-cont .left {
+				width: 467px;
+				height: 467px;
+				background-image: url("../i/back-inf-1.png");
+				background-position: 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+				position: relative;
+			}
+			.b-content .b-inf:nth-child(2n) .b-block .inf-cont .left {
+				background-image: url("../i/back-inf-2.png");
+			}
+				.b-inf .b-block .inf-cont .left img {
+					max-width: 100%;
+					margin-top: 57px;
+					width: 384px;
+				}
+				.b-inf .b-block .inf-cont .left span {
+
+				}
+				.b-inf .b-block .inf-cont .left .photo-btn {
+					width: 180px;
+					height: 180px;
+					background-image: url("../i/photo-back.png");
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: contain;
+					box-sizing: border-box;
+					padding-top: 88px;
+					position: absolute;
+					right: -97px;
+					top: 240px;
+					cursor: pointer;
+					font-family: "pf_bague_sans_promedium";
+					font-size: 14px;
+					text-transform: uppercase;
+					line-height: 1.2;
+					letter-spacing: 1.7px;
+				}
+					.b-inf .b-block .inf-cont .left .photo-btn:hover {
+						background-image: url("../i/photo-back-hover.png");
+						color: #fff;
+					}
+						.b-inf .b-block .inf-cont .left .photo-btn:hover:before {
+
+						}
+			.b-inf .b-block .inf-cont .right {
+				width: 347px;
+				text-align: left;
+			}
+				.b-inf .b-block .inf-cont .right .title {
+					font-size: 22px;
+					letter-spacing: 4px;
+					font-family: "pf_bague_sans_promedium";
+				}
+				.b-inf .b-block .inf-cont .right .line {
+					width: 70px;
+				}
+				.b-inf .b-block .inf-cont .right p {
+					font-size: 18px;
+				    font-family: "pf_bague_sans_proregular";
+				    color: rgb(0, 0, 0);
+				    line-height: 1.2;
+				    margin-top: 20px;
+				}
 @media (min-width: 768px) and (max-width: 1279px){
 	.b-plan .b-plan-img.b-block {
 		width: 960px;

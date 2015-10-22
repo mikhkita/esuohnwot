@@ -41,47 +41,54 @@ $(document).ready(function(){
       }
     }
     $.fn.placeholder();
-    
-	var myPlace = new google.maps.LatLng(56.473918, 85.046380);
-    var myOptions = {
-        zoom: 17,
-        center: myPlace,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        zoomControl: true
+    if($("#map_canvas").length) {
+    	var myPlace = new google.maps.LatLng(56.473918, 85.046380);
+        var myOptions = {
+            zoom: 17,
+            center: myPlace,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            zoomControl: true
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+        var image = 'i/map-marker.png';
+        var marker = new MarkerWithLabel({
+           position: myPlace,
+           map: map,
+           icon: image,
+           labelContent: "ТАУНХАУСЫ В&nbsp;АКАДЕМГОРОДКЕ",
+           labelAnchor: new google.maps.Point(-56, 113),
+           labelClass: "map-marker",
+           labelInBackground: false
+         });
     }
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-    var image = 'i/map-marker.png';
-    var marker = new MarkerWithLabel({
-       position: myPlace,
-       map: map,
-       icon: image,
-       labelContent: "ТАУНХАУСЫ В&nbsp;АКАДЕМГОРОДКЕ",
-       labelAnchor: new google.maps.Point(-56, 113),
-       labelClass: "map-marker",
-       labelInBackground: false
-     });
+    if($("#datepicker").length) {
+        $( "#datepicker" ).datepicker({
+            minDate: 0,
+            onClose: function() {
+                $( "#datepicker" ).valid();
+            }
+        }).datepicker( $.datepicker.regional[ "ru" ] );
 
-    $( "#datepicker" ).datepicker({
-        minDate: 0,
-        onClose: function() {
-            $( "#datepicker" ).valid();
-        }
-    }).datepicker( $.datepicker.regional[ "ru" ] );
-
-    $( ".b-mobile-nav" ).click(function() {
-        if(!$( ".b-mobile-menu" ).hasClass("active")) {
-            $( ".b-mobile-menu" ).show().addClass("active");  
-            $( ".b-mobile-menu" ).animate({
-                right: '0',
-            }, 300, "linear");
-        } else {        
-            $( ".b-mobile-menu" ).animate({
-                right: '-350px',
-            }, 300, "linear",function(){ $( ".b-mobile-menu" ).hide().removeClass("active"); });
-              
-        }
-        return  false;
+        $( ".b-mobile-nav" ).click(function() {
+            if(!$( ".b-mobile-menu" ).hasClass("active")) {
+                $( ".b-mobile-menu" ).show().addClass("active");  
+                $( ".b-mobile-menu" ).animate({
+                    right: '0',
+                }, 300, "linear");
+            } else {        
+                $( ".b-mobile-menu" ).animate({
+                    right: '-350px',
+                }, 300, "linear",function(){ $( ".b-mobile-menu" ).hide().removeClass("active"); });
+                  
+            }
+            return  false;
+        });
+    }
+    $('#fullpage').fullpage({
+        sectionSelector: '.b-inf',
+        fixedElements: '.b-header-cont, .b-footer',
+        normalScrollElements: '.b-header-cont, .b-footer',
     });
 });
