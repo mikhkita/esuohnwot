@@ -23,6 +23,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
@@ -41,6 +42,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
@@ -66,21 +68,23 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<li><a href="#">контакты</a></li>
 		</ul>
 	</div>
-	<div class="b b-header">
-		<div class="b-block clearfix">
-			<a class="b-logo left" href="#">
-				<img class="left" src="i/logo.png">
-				<h3 class="bold left">Таунхаусы<br>в академгородке</h3>
-			</a>
-			<ul class="b-menu right clearfix">
-				<li><a href="#">генплан</a></li>
-				<li><a href="#">таунхаусы</a></li>
-				<li><a href="#">инфраструктура</a></li>
-				<li><a href="#">акции</a></li>
-				<li><a href="#">проект</a></li>
-				<li><a href="#">контакты</a></li>
-			</ul>
-			<a href="#" class="b-mobile-nav right"></a>
+	<div class="b-header-cont">
+		<div class="b b-header">
+			<div class="b-block clearfix">
+				<a class="b-logo left" href="#">
+					<img class="left" src="i/logo.png">
+					<h3 class="bold left">Таунхаусы<br>в академгородке</h3>
+				</a>
+				<ul class="b-menu right clearfix">
+					<li><a href="#">генплан</a></li>
+					<li><a href="#">таунхаусы</a></li>
+					<li><a href="#">инфраструктура</a></li>
+					<li><a href="#">акции</a></li>
+					<li><a href="#">проект</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<a href="#" class="b-mobile-nav right"></a>
+			</div>
 		</div>
 	</div>
 	<div class="b-content">
@@ -93,15 +97,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<h3>ЦЕНА: 6 500 000 <span>&#8381;</span></h3>
 						<ul class="clearfix">
 							<li class="b-go" data-offset="50" data-block=".b-floor">
-								<div style="background-image: url('i/floor1.jpg');"></div>
+								<img src="i/floor2.jpg">
 								<h4>первый этаж</h4>
 							</li>
 							<li class="b-go" data-offset="50" data-block=".b-floor">
-								<div style="background-image: url('i/floor2.jpg');"></div>
+								<img src="i/floor2.jpg">
 								<h4>второй этаж</h4>
 							</li>
 							<li class="b-go" data-offset="50" data-block=".b-floor">
-								<div style="background-image: url('i/floor3.jpg');"></div>
+								<img src="i/floor3.jpg">
 								<h4>третий этаж</h4>
 							</li>
 						</ul>
@@ -222,19 +226,19 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<ul class="clearfix">
 				<li class="b-first-floor">
 					<a class="fancy-img" href="i/floor1.jpg" rel="gallery0">
-						<div style="background-image: url('i/floor1.jpg');"></div>
+						<img src="i/floor2.jpg">
 						<h3>первый этаж</h3>
 					</a>
 				</li>
 				<li class="b-second-floor">
 					<a class="fancy-img" href="i/floor2.jpg" rel="gallery0">
-						<div style="background-image: url('i/floor2.jpg');"></div>
+						<img src="i/floor2.jpg">
 						<h3>второй этаж</h3>
 					</a>
 				</li>
 				<li class="b-third-floor">
 					<a class="fancy-img" href="i/floor3.jpg" rel="gallery0">
-						<div style="background-image: url('i/floor3.jpg');"></div>
+						<img src="i/floor3.jpg">
 						<h3>третий этаж</h3>
 					</a>
 				</li>
@@ -341,4 +345,5 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</div>
 	</div>
 </div>
+</body>
 </html>
