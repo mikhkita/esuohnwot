@@ -210,7 +210,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</div>
 			</div>
 		</div>
-		<div class="b b-footer clearfix">
+		<div class="b b-footer b-inf fp-auto-height clearfix">
 			<a href="#" class="fancy" data-block="#b-popup-callback">Обратная<br>связь</a>
 			<a href="#">Индивидуальная<br>планировка</a>
 			<a href="#" class="fancy" data-block="#b-popup-order">Записаться<br>на просмотр</a>
