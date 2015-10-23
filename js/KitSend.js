@@ -46,9 +46,13 @@ $(document).ready(function(){
 			// topRatio: 0,
 			helpers: {
 	         	overlay: {
-	            	locked: true 
+	            	locked: true,
+	            	css : {
+		                'background' : 'rgba(237,234,229,0.95)'
+		            }
 	         	}
 	      	},
+			
 			beforeShow: function(){
 				$popup.find(".custom-field").remove();
 				if( $this.attr("data-value") ){
@@ -87,7 +91,15 @@ $(document).ready(function(){
 	});
 
 	$(".fancy-img").fancybox({
-		padding : 0
+		padding : 0,
+		helpers: {
+         	overlay: {
+            	locked: true,
+            	css : {
+	                'background' : 'rgba(237,234,229,0.95)'
+	            }
+         	}
+      	},
 	});
 
 	$(".ajax").parents("form").submit(function(){

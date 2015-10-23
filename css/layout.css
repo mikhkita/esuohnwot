@@ -130,10 +130,10 @@ input.error,textarea.error{
 .fancybox-inner{
 	overflow: visible !important;
 }
-.fancybox-overlay{
+/*.fancybox-overlay{
 	background: none;
 	background-color: rgba(237,234,229,0.95);
-}
+}*/
 .fancybox-skin {
 	background: none;
 }
