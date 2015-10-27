@@ -43,7 +43,7 @@ $(document).ready(function(){
 		$this.fancybox({
 			padding : 0,
 			content : $popup,
-			// topRatio: 0,
+			fitToView: false,
 			helpers: {
 	         	overlay: {
 	            	locked: true,
@@ -92,14 +92,20 @@ $(document).ready(function(){
 
 	$(".fancy-img").fancybox({
 		padding : 0,
+		autoSize: false,
+		minWidth: 900,
+		maxHeight: 500,
+		autoHeight: true,
 		helpers: {
          	overlay: {
-            	locked: true,
             	css : {
 	                'background' : 'rgba(237,234,229,0.95)'
 	            }
          	}
       	},
+      	// tpl: {
+      	// 	image: '<div class="fancybox-image-wrap"><img src="{href}" alt="" /></div>',
+      	// }
 	});
 
 	$(".ajax").parents("form").submit(function(){
@@ -130,7 +136,15 @@ $(document).ready(function(){
 					$this.find("input[type=text],textarea").val("");
 					$.fancybox.open({
 						content : $form,
-						padding : 0
+						padding : 0,
+						helpers: {
+				         	overlay: {
+				            	locked: true,
+				            	css : {
+					                'background' : 'rgba(237,234,229,0.95)'
+					            }
+				         	}
+				      	},
 					});	
 				}
 			});

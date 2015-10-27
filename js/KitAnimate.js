@@ -49,8 +49,8 @@ $(document).ready(function(){
 	// Кастомные функции
 	custom['upPercent'] = function(el){
 		var num = el.attr("data-num")*1,
-			out = el.find(".b-proc-text span"),
-			dur = 1000,
+			out = el,
+			dur = 3000,
 			timer,
 			now = out.html()*1;
 		timer = setInterval(function(){
@@ -58,6 +58,7 @@ $(document).ready(function(){
 			out.html(now);
 			if( now >= num ) clearInterval(timer);
 		},dur/(num-now));
+		// console.log(dur/(num-now));
 	}
 
 });

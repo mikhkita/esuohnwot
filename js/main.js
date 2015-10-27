@@ -42,6 +42,15 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     if($("#map_canvas").length) {
+        var styles = [
+        {
+            "stylers": [
+                { lightness: -7 }
+            ]
+        }
+    ]
+        var styledMap = new google.maps.StyledMapType(styles,
+            {name: "Styled Map"});
     	var myPlace = new google.maps.LatLng(56.472116, 85.060183);
         var myOptions = {
             zoom: 17,
@@ -62,6 +71,8 @@ $(document).ready(function(){
            labelClass: "map-marker",
            labelInBackground: false
          });
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
     }
     if($("#datepicker").length) {
         $( "#datepicker" ).datepicker({
@@ -105,4 +116,10 @@ $(document).ready(function(){
             sectionSelector: '.b-inf',
             paddingTop: '79px'
         });
+
+    $("#radio-callback").change(function(){
+        if($(this).prop("checked")) {
+            $("#callback-time").slideDown();
+        } else $("#callback-time").slideUp();
+    });
 });

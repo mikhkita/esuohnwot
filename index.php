@@ -94,11 +94,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<img src="i/bird.png">
 				<h2>престижно. комфортно. элитно.</h2>
 				<div class="main-square clearfix">
-					<span class="left">157</span>
-					<span class="left">386</span>
+					<span class="left anim fadeIn" data-func="upPercent" data-num="157" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
+					<span class="left anim fadeIn" data-func="upPercent" data-num="386" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
 					<span class="left mid">от 6,5 млн</span>
-					<span class="right">58</span>
-					<span class="right">35</span>
+					<span class="right anim fadeIn" data-func="upPercent" data-num="58" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
+					<span class="right anim fadeIn" data-func="upPercent" data-num="35" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
 				</div>
 			</div>
 		</div>
@@ -144,6 +144,44 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="input-cont clearfix">
 						<label for="email">Ваша почта</label>
 						<input type="text" id="email" name="email"/>
+					</div>
+					<div class="input-cont clearfix">
+						<label for="question">Ваш вопрос</label>
+						<textarea type="text" id="question" name="1"></textarea>
+						<input type="hidden" name="1-name" value="Вопрос"/>
+					</div>
+					<div class="input-cont radio clearfix">
+						<input type="checkbox" id="radio-callback" name="callback">
+						<label class="right" for="radio-callback">
+	                		<span class="checked"></span>  
+	                		<h5>Заказать обратный звонок</h5>
+	            		</label>
+            		</div>
+					<div class="input-cont clearfix" id="callback-time">
+						<label>Выбрать время</label>
+						<ul class="right radio">
+							<li>
+								<input type="radio" id="radio11" name="callback-time">
+	                    		<label for="radio11">
+	                        		<span class="checked"></span>  
+	                        		<h5>с 9 до 12</h5>
+	                    		</label>
+							</li>
+							<li>
+								<input type="radio" id="radio22" name="callback-time">
+	                    		<label for="radio22">
+	                        		<span class="checked"></span>  
+	                        		<h5>с 12 до 15</h5>
+	                    		</label>
+							</li>
+							<li>
+								<input type="radio" id="radio33" name="callback-time">
+	                    		<label for="radio33">
+	                        		<span class="checked"></span>  
+	                        		<h5>с 15 до 18</h5>
+	                    		</label>
+							</li>
+						</ul>
 					</div>
 					<input type="hidden" name="subject" value="Обратная связь"/>
 					<input type="submit" class="ajax b-orange-butt" value="Отправить">

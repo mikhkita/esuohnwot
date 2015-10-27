@@ -145,10 +145,17 @@ input.error,textarea.error{
 	   -moz-box-shadow: none;
 	        box-shadow: none;
 }
+.fancybox-image-wrap div{
+	
+	background-color: #FFFFFF;
+}
+	.fancybox-image-wrap {
+
+	}
 .b-popup {
 	width: 600px;
 	color: #3a202a;
-	/*margin-top: 60px;*/
+	padding: 50px;
 }
 	.b-popup h2{
 		text-transform: uppercase;
@@ -162,22 +169,27 @@ input.error,textarea.error{
 
 	margin-bottom: 20px;}
 		.b-popup .input-cont label {
-			font-size: 22px;
+			font-size: 24px;
 			font-family: "pf_bague_sans_proregular";
 			line-height: 1.2;
 			display: block;
 			float: left;
-			margin-top: 10px;
+			margin-top: 8px;
 		}
-		.b-popup .input-cont input[type=text] {
+		.b-popup .input-cont input[type=text],.b-popup .input-cont textarea {
 			display: block;
 			float: right;
-			width: 240px;
+			width: 280px;
 			padding: 10px;
 			font-size: 20px;
 			border: 1px solid rgb(58, 32, 42);
 			background-color: transparent;
 		}
+		
+		.b-popup .input-cont textarea {
+			resize:none;
+			height: 95px;
+		}    
 	.b-popup h3,.b-popup h4{
 		font-family: "pf_bague_sans_proregular";
 		font-size: 30px;
@@ -185,7 +197,7 @@ input.error,textarea.error{
 		margin-bottom: 10px;
 	}
 	.b-popup h4 {
-		font-size: 25px;
+		font-size: 26px;
 	}
 	.b-popup input[type=submit] {
 		background-color: #7f2e04;
@@ -210,10 +222,10 @@ input.error,textarea.error{
 		margin-left: 35px;
 		margin-top: 2px;
 	}
-	.radio input[type=radio] {
+	.radio input[type=radio],.radio input[type=checkbox] {
 		display: none;
 	}
-	.radio input[type=radio]:checked + label .checked {
+	.radio input[type=radio]:checked + label .checked,.radio input[type=checkbox]:checked + label .checked {
 		display: block;
 	}
 	.radio label {
@@ -247,7 +259,12 @@ input.error,textarea.error{
 			width: 16px;
 			height: 16px;
 		}
-
+	#callback-time {
+		display: none;
+	}
+	.input-cont.radio {
+		display: block;
+	}
 
 
 .bold{
@@ -400,17 +417,21 @@ input:-moz-placeholder {
 		.b-main .b-block .main-square span {
 			display: block;
 			font-family: "pf_bague_sans_problack";
-			font-size: 25px;
-			margin-top: 170px;
-    		margin-left: 52px;
-    		margin-right: 31px;
+			font-size: 30px;
+			margin-top: 167px;
+			margin-left: 46px;
+			margin-right: 28px;
 			color: #fff;
+		}
+		.b-main .b-block .main-square span.fadeIn {
+			width: 53px;
+			text-align: center;
 		}
 
 		.b-main .b-block .main-square span.right {
-    		margin-right: 63px;
-    		margin-left: 32px;
-  		}		
+    		margin-right: 50px;
+    		margin-left: 20px;
+    }		
 
 		.b-main .b-block .main-square span.left.mid {
     		font-size: 38px;
@@ -930,7 +951,7 @@ input:-moz-placeholder {
 			color: rgb(0, 0, 0);		
 			line-height: 1.2;	
 			text-align: left;		
-			padding: 60px 0 30px;
+			padding: 60px 0 100px;
 		}
 		.b-inf .b-block .inf-cont {
 			/*padding: 80px 0;*/
@@ -1000,6 +1021,7 @@ input:-moz-placeholder {
 				    line-height: 1.2;
 				    margin-top: 20px;
 				}
+
 @media (min-width: 768px) and (max-width: 1279px){
 	.b-plan .b-plan-img.b-block {
 		width: 960px;

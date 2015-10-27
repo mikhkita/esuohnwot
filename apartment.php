@@ -225,7 +225,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<ul class="clearfix">
 				<li class="b-first-floor">
-					<a class="fancy-img" href="i/floor1.jpg" rel="gallery0">
+					<a class="fancy-img" href="i/bg-img.jpg" title="ПЕРВЫЙ ЭТАЖ" rel="gallery0">
 						<img src="i/floor2.jpg">
 						<h3>первый этаж</h3>
 					</a>
