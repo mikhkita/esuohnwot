@@ -24,6 +24,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
@@ -44,6 +45,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -225,19 +227,19 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<ul class="clearfix">
 				<li class="b-first-floor">
-					<a class="fancy-img" href="i/bg-img.jpg" title="ПЕРВЫЙ ЭТАЖ" rel="gallery0">
+					<a class="fancy" href="#" data-block="#b-popup-gallery" data-slide="0" data-text="первый этаж">
 						<img src="i/floor2.jpg">
 						<h3>первый этаж</h3>
 					</a>
 				</li>
 				<li class="b-second-floor">
-					<a class="fancy-img" href="i/floor2.jpg" rel="gallery0">
+					<a class="fancy" href="#" data-block="#b-popup-gallery" data-slide="1" data-text="второй этаж">
 						<img src="i/floor2.jpg">
 						<h3>второй этаж</h3>
 					</a>
 				</li>
 				<li class="b-third-floor">
-					<a class="fancy-img" href="i/floor3.jpg" rel="gallery0">
+					<a class="fancy" href="#" data-block="#b-popup-gallery" data-slide="2" data-text="третий этаж">
 						<img src="i/floor3.jpg">
 						<h3>третий этаж</h3>
 					</a>
@@ -328,6 +330,16 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<input type="submit" class="ajax b-orange-butt" value="Отправить">
 				</div>
 			</form>
+		</div>
+	</div>
+	<div id="b-popup-gallery">
+		<div class="for_all b-popup-gallery">
+			<h3>Первый этаж</h3>
+			<div class="popup-gallery">
+				<div style="background-image: url('i/floor1.jpg');" class="gallery-img">первый этаж</div>
+				<div style="background-image: url('i/floor2.jpg');" class="gallery-img">второй этаж</div>
+				<div style="background-image: url('i/floor3.jpg');" class="gallery-img">третий этаж</div>
+			</div>
 		</div>
 	</div>
 	<div id="b-popup-2">

@@ -11,7 +11,12 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        if( $(".b-popup-gallery:visible").length ) {
+            $(".b-popup-gallery").css("width",(myWidth-100)+"px").css("height",(myHeight-100)+"px");
+            $(".b-popup-gallery .gallery-img").css("height",(myHeight-260)+"px");
+        }
         $(".b-content").css("min-height",myHeight-$(".b-footer").height());
+
     }
     $(window).resize(resize);
     resize();
@@ -45,7 +50,7 @@ $(document).ready(function(){
         var styles = [
         {
             "stylers": [
-                { lightness: -7 }
+                { lightness: -10 }
             ]
         }
     ]
@@ -121,5 +126,37 @@ $(document).ready(function(){
         if($(this).prop("checked")) {
             $("#callback-time").slideDown();
         } else $("#callback-time").slideUp();
+    });
+    if($(".popup-gallery").length) {
+        $(".popup-gallery").slick({
+            infinite: false,
+            draggable: false,
+            autoplay: false,
+            prevArrow: "<span class='popup-arrow popup-left-arrow'></span>",
+            nextArrow: "<span class='popup-arrow popup-right-arrow'></span>"
+        });
+    }
+    
+    $('.popup-gallery').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $(".b-popup-gallery h3").text($(".b-popup-gallery .popup-gallery .gallery-img").eq(nextSlide).text());
+    });
+
+    $( "#square-range" ).slider({
+      range: true,
+      min: 142,
+      max: 412,
+      values: [ 150, 300 ],
+      slide: function( event, ui ) {
+        
+      }
+    });
+    $( "#price-range" ).slider({
+      range: true,
+      min: 1402,
+      max: 7000,
+      values: [ 1502, 3442 ],
+      slide: function( event, ui ) {
+        
+      }
     });
 });

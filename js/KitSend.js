@@ -54,6 +54,12 @@ $(document).ready(function(){
 	      	},
 			
 			beforeShow: function(){
+				if($this.attr("data-block") == "#b-popup-gallery") {
+					$(window).resize();
+					$(".popup-gallery:visible").slick('slickGoTo',$this.attr("data-slide"),true);  	      
+					$(".popup-gallery:visible").slick('setPosition');		
+					$(".b-popup-gallery").find("h3").text($this.attr("data-text"));
+				}
 				$popup.find(".custom-field").remove();
 				if( $this.attr("data-value") ){
 					var name = getNextField($popup.find("form"));
@@ -92,10 +98,6 @@ $(document).ready(function(){
 
 	$(".fancy-img").fancybox({
 		padding : 0,
-		autoSize: false,
-		minWidth: 900,
-		maxHeight: 500,
-		autoHeight: true,
 		helpers: {
          	overlay: {
             	css : {
@@ -103,9 +105,6 @@ $(document).ready(function(){
 	            }
          	}
       	},
-      	// tpl: {
-      	// 	image: '<div class="fancybox-image-wrap"><img src="{href}" alt="" /></div>',
-      	// }
 	});
 
 	$(".ajax").parents("form").submit(function(){
