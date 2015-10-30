@@ -227,28 +227,35 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<ul class="clearfix">
 				<li class="b-first-floor">
-					<a class="fancy" href="#" data-block="#b-popup-gallery" data-slide="0" data-text="первый этаж">
+					<a class="fancy-img" href="#" data-block="#b-popup-gallery" data-slide="0" data-text="первый этаж">
 						<img src="i/floor2.jpg">
 						<h3>первый этаж</h3>
 					</a>
 				</li>
 				<li class="b-second-floor">
-					<a class="fancy" href="#" data-block="#b-popup-gallery" data-slide="1" data-text="второй этаж">
+					<a class="fancy-img" href="#" data-block="#b-popup-gallery" data-slide="1" data-text="второй этаж">
 						<img src="i/floor2.jpg">
 						<h3>второй этаж</h3>
 					</a>
 				</li>
 				<li class="b-third-floor">
-					<a class="fancy" href="#" data-block="#b-popup-gallery" data-slide="2" data-text="третий этаж">
+					<a class="fancy-img" href="#" data-block="#b-popup-gallery" data-slide="2" data-text="третий этаж">
 						<img src="i/floor3.jpg">
 						<h3>третий этаж</h3>
 					</a>
 				</li>
 			</ul>
 		</div>
-		<div class="b-order-plan">
-			<div class="b-block">
-				<h3>Есть возможность заказать проект под индивидуальную<br>планировку</h3>
+		<div class="order-plan-slider">
+			<div class="b-order-plan">
+				<div class="b-block">
+					<h3>Есть возможность заказать проект под индивидуальную<br>планировку</h3>
+				</div>
+			</div>
+			<div class="b-order-plan">
+				<div class="b-block">
+					<h3>Есть возможность заказать проект под индивидуальную<br>планировку</h3>
+				</div>
 			</div>
 		</div>
 	</div>

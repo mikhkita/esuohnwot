@@ -24,6 +24,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
@@ -44,6 +45,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -91,6 +93,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div class="b-townhouse">
 			<div class="b-block">
 				<h2>Таунхаусы</h2>
+				<form action="#">
 				<div class="slider-cont clearfix">
 					<div class="left">
 						<h3>Площадь</h3>
@@ -108,13 +111,14 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input type="text">
 						<label class="last">до</label>
 						<input type="text">
-						<span>м<sup>2</sup></span>
+						<span>т. руб.</span>
 					</div>
 				</div>
 				<div class="filter clearfix">
 					<span class="left">11 вариантов</span>
 					<a class="left" href="#">Сбросить фильтр</a>
 				</div>
+				</form>
 			</div>
 			<div class="b-block house-list">
 				<h4>Дом №1а</h4>
@@ -317,7 +321,20 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</ul>
 			</div>
 		</div>
+		<div class="order-plan-slider">
+			<div class="b-order-plan">
+				<div class="b-block">
+					<h3>Есть возможность заказать проект под индивидуальную<br>планировку</h3>
+				</div>
+			</div>
+			<div class="b-order-plan">
+				<div class="b-block">
+					<h3>Есть возможность заказать проект под индивидуальную<br>планировку</h3>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<div class="b b-footer clearfix">
 		<a href="#" class="fancy" data-block="#b-popup-callback">Обратная<br>связь</a>
 		<a href="#">Индивидуальная<br>планировка</a>

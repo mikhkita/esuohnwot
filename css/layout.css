@@ -130,15 +130,22 @@ input.error,textarea.error{
 .fancybox-inner{
 	overflow: visible !important;
 }
-/*.fancybox-overlay{
-	background: none;
-	background-color: rgba(237,234,229,0.95);
-}*/
+
 .fancybox-skin {
 	background: none;
 }
 .fancybox-close {
-	display: none;
+	background-image: url("../i/cross-w.png");
+	background-size: contain;
+	width: 32px;
+	height: 31px;
+	top: 13px;
+    right: 13px;
+}
+.popup-close {
+	background-image: url("../i/cross.png");
+	top: 0;
+	right: 0;
 }
 .fancybox-opened .fancybox-skin {
 	-webkit-box-shadow: none;
@@ -920,6 +927,7 @@ input:-moz-placeholder {
 		height: 763px;
 		box-sizing:border-box;
 		padding: 301px 0 0;
+		width: 1280px;
 	}
 		.b-order-plan .b-block h3 {
 			font-size: 30px;
@@ -1007,7 +1015,7 @@ input:-moz-placeholder {
 				text-align: left;
 			}
 				.b-inf .b-block .inf-cont .right .title {
-					font-size: 22px;
+					font-size: 25px;
 					letter-spacing: 4px;
 					font-family: "pf_bague_sans_promedium";
 				}
@@ -1084,20 +1092,51 @@ input:-moz-placeholder {
 		padding: 50px;
 
 	}
-		.b-popup-gallery .popup-gallery .popup-arrow {
-			width: 20px;
-			height: 20px;
-			background-color: red;
+		.arrow {
+			width: 48px;
+			height: 90px;
 			position: absolute;
 			top: 50%;
-			margin-top: -10px;
+			margin-top: -45px;
 			cursor: pointer;
+			background-position: 50%;
+			background-repeat: no-repeat;
+			opacity: 0.5;
 		}
-			.b-popup-gallery .popup-gallery .popup-left-arrow {
-				left: 20px;
+		.arrow:hover {
+			opacity: 1;
+		}
+		.popup-left-arrow,.order-left-arrow {
+			background-image: url("../i/left-arrow.png");
+			left: 0px;
+		}
+		.popup-right-arrow,.order-right-arrow {
+			background-image: url("../i/right-arrow.png");
+			right: 0px;
+		}
+		.slick-disabled {
+			display: none !important; 
+		}
+			.b-popup-gallery .popup-gallery .arrow {
+				width: 24px;
+				height: 45px;	
+				background-size: 24px 45px;
+				padding: 50px 20px;
+				margin-top: -73px;
 			}
-			.b-popup-gallery .popup-gallery .popup-right-arrow {
-				right: 20px;
+			.order-plan-slider .arrow {
+				background-size: 48px 90px;
+				margin-top: -195px;	
+				background-position: 50%;
+				padding: 100px 50px;			
+			}
+			.order-plan-slider .order-left-arrow {
+				left: 50%;
+				margin-left: -640px;			
+			}
+			.order-plan-slider .order-right-arrow {
+				right: 50%;
+				margin-right: -640px;
 			}
 		.b-popup-gallery .popup-gallery .gallery-img {
 			font-size: 0;
@@ -1176,20 +1215,23 @@ margin-bottom: 45px;
 				box-sizing: border-box;
 				margin-right: 5px;
 				text-align: center;
-				padding: 1px 0;
+				padding: 1px 5px;
 			}
 
 			.b-townhouse .b-block .slider-cont span sup{
+				font-size: 9px;
 
-font-size: 9px;
+			}
 
-}
 			.b-townhouse .b-block .slider-cont > .left{
 				width: 450px;
 			}
 			.b-townhouse .b-block .slider-cont > .right {
-
+				width: 450px;
 			}
+				.b-townhouse .b-block .slider-cont > .right input {
+					width: 60px;
+				}
 		.b-townhouse .b-block .filter {
 			margin-bottom: 68px;
 		}
@@ -1235,7 +1277,7 @@ font-size: 9px;
 			padding-left: 74px;
 			margin-bottom: 55px;
 			position: relative;
-			margin-left: 38px;
+			margin-left: 35px;
 		}
 		.b-townhouse .b-block h4:before {
 			position: absolute;
@@ -1252,9 +1294,8 @@ font-size: 9px;
 			margin: 0 auto;
 			padding-bottom: 65px;
 		}
-			.b-townhouse .house-list ul {
-				
-padding-bottom: 60px;
+			.b-townhouse .house-list ul {		
+				padding-bottom: 60px;
 			}
 				.b-townhouse .house-list li {
 					padding-left: 35px;
@@ -1320,6 +1361,25 @@ padding-bottom: 60px;
 								.b-townhouse .house-list li .house-cont a:hover {
 									text-decoration: none;
 								}
+.b-contacts {
+
+}
+	.b-contacts .b-block {
+		padding: 75px 0 100px;
+	}
+		.b-contacts .b-block h2 {
+			font-size: 55px;
+		    font-family: "pf_bague_sans_prothin";
+		    color: rgb(0, 0, 0);
+		    line-height: 1.2;
+		    margin-bottom: 45px;
+		}
+		.b-contacts .b-block h3 {
+			font-size: 20px;
+		    font-family: "pf_bague_sans_problack";
+		    text-transform: uppercase;
+		    line-height: 1.8;
+		}
 @media (min-width: 768px) and (max-width: 1279px){
 	.b-plan .b-plan-img.b-block {
 		width: 960px;
@@ -1347,6 +1407,37 @@ padding-bottom: 60px;
     	top: 7px;
     	font-size: 100px;
 	}
+	.order-plan-slider .b-block {
+		width: 960px;
+	}
+	.order-plan-slider .arrow {
+		background-size: 48px 90px;
+		margin-top: -195px;	
+		background-position: 50%;
+		padding: 100px 20px;			
+	}
+	.order-plan-slider .order-left-arrow {
+		margin-left: -480px;
+	}
+	.order-plan-slider .order-right-arrow {
+		margin-right: -480px;
+	}
+	.b-townhouse .b-block h4 {
+		margin-left: 102px;
+	}
+	.b-townhouse .house-list {
+			width: 960px;
+		}
+			.b-townhouse .house-list ul {
+				margin: 0 67px;
+			}
+				.b-townhouse .house-list li:nth-child(3n) {
+					margin-right: 0;
+				}
+				.b-townhouse .house-list li:nth-child(4n) {
+					margin-right: 30px;
+				}
+
 }
 
 @media screen and (max-width: 1020px){

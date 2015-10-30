@@ -7,7 +7,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Апартаменты</title>
+	<title>Инфраструктура</title>
 	<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	

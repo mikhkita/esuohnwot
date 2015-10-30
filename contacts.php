@@ -7,7 +7,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Главная</title>
+	<title>Контакты</title>
 	<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	
@@ -88,37 +88,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</div>
 	</div>
 	<div class="b-content">
-		<div class="b b-main">
+		<div class="b-contacts">
 			<div class="b-block">
-				<h1><span>Новые таунхаусы</span><br>в академгородке</h1>
-				<img src="i/bird.png">
-				<h2>престижно. комфортно. элитно.</h2>
-				<div class="main-square clearfix">
-					<span class="left anim fadeIn" data-func="upPercent" data-num="157" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
-					<span class="left anim fadeIn" data-func="upPercent" data-num="386" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
-					<span class="left mid">от 6,5 млн</span>
-					<span class="right anim fadeIn" data-func="upPercent" data-num="58" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
-					<span class="right anim fadeIn" data-func="upPercent" data-num="35" data-anim="fadeIn" data-delay="0" data-cont=".main-square">0</span>
-				</div>
+				<h2>Контакты</h2>
+				<h3>Россия, 634034, г.Томск, ул. Косарева, д.33.<br>
+					(3822) 305-000<br>
+					(3822) 561-830
+				</h3>
 			</div>
 		</div>
-		<div class="b b-plan">
-			<div class="b-block">
-				<ul>
-					<li>жилая площадь<br>от 157 до 386 м<sup>2</sup></li>
-					<li>Стоимость квартиры от 6 100 000 рублей</li>
-					<li>35 из 58<br>Доступных квартир</li>
-				</ul>
-			</div>
-			<div class="b-block b-plan-img clearfix">
-				<div class="left"></div>	
-				<a href="#" class="center">
-					<span></span>
-					<h3>планировка квартир</h3>
-				</a>
-				<div class="right"></div>     
-			</div>                            
-		</div>	
 		<div id="map_canvas"></div>
 	</div>
 	<div class="b b-footer clearfix">
