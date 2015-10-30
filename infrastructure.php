@@ -24,6 +24,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
@@ -44,6 +45,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
@@ -95,7 +97,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img src="i/eco.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Экологичность</h3>
@@ -112,7 +114,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img src="i/transport.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Транспортная доступность</h3>
@@ -129,7 +131,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img src="i/building.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Возможность участвовать в&nbsp;процессе строительства</h3>
@@ -146,7 +148,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img style="margin-right: 35px;" src="i/comm.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Собственные коммуникации</h3>
@@ -164,7 +166,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img src="i/mansarda.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Мансарда в подарок</h3>
@@ -182,7 +184,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img src="i/garage.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Собственный гараж и&nbsp;парковочные места перед домом</h3>
@@ -199,7 +201,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="left">
 						<img src="i/defence.png">
 						<span></span>
-						<div class="photo-btn">смотреть<br>фото</div>
+						<div class="fancy-img photo-btn" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">смотреть<br>фото</div>
 					</div>
 					<div class="right">
 						<h3 class="title">Охраняемая территория с видеонаблюдением</h3>
@@ -238,6 +240,14 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<input type="submit" class="ajax b-orange-butt" value="Отправить">
 				</div>
 			</form>
+		</div>
+	</div>
+	<div id="b-popup-inf-photo">
+		<div class="for_all b-popup-gallery">
+			<h3>Фото</h3>
+			<div class="popup-gallery">
+				
+			</div>
 		</div>
 	</div>
 	<div id="b-popup-order">

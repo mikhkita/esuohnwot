@@ -114,14 +114,34 @@ $(document).ready(function(){
 		            }
 	         	}
 	      	},
-			
+			beforeLoad: function() {
+				if($this.attr("data-block") == "#b-popup-inf-photo") {
+					var imgs = $this.attr("data-imgs").split(',');
+					$("#b-popup-inf-photo .popup-gallery").empty();
+					$(imgs).each(function(index, value){
+						$("#b-popup-inf-photo .popup-gallery").append('<div style="background-image: url('+value+');" class="gallery-img"></div>');
+					});
+				}	
+				$(".popup-gallery").slick({
+		            infinite: false,
+		            draggable: false,
+		            autoplay: false,
+		            slidesToShow: 1,
+		            slidesToScroll: 1,
+		            prevArrow: "<span class='arrow popup-left-arrow'></span>",
+		            nextArrow: "<span class='arrow popup-right-arrow'></span>"
+		        });		
+			},
 			beforeShow: function(){
+				$(window).resize();
+				$(".popup-gallery:visible").slick('setPosition');
 				if($this.attr("data-block") == "#b-popup-gallery") {
-					$(window).resize();
 					$(".popup-gallery:visible").slick('slickGoTo',$this.attr("data-slide"),true);  	      
-					$(".popup-gallery:visible").slick('setPosition');		
 					$(".b-popup-gallery").find("h3").text($this.attr("data-text"));
 				}
+			},
+			afterClose: function() {
+				$(".popup-gallery").slick('unslick');
 			}
 		});
 	});

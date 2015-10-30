@@ -127,20 +127,9 @@ $(document).ready(function(){
             $("#callback-time").slideDown();
         } else $("#callback-time").slideUp();
     });
-    if($(".popup-gallery").length) {
-        $(".popup-gallery").slick({
-            infinite: false,
-            draggable: false,
-            autoplay: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            prevArrow: "<span class='arrow popup-left-arrow'></span>",
-            nextArrow: "<span class='arrow popup-right-arrow'></span>"
-        });
-    }
     
-    $('.popup-gallery').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        $(".b-popup-gallery h3").text($(".b-popup-gallery .popup-gallery .gallery-img").eq(nextSlide).text());
+    $('#b-popup-gallery .popup-gallery').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $("#b-popup-gallery .b-popup-gallery h3").text($("#b-popup-gallery .b-popup-gallery .popup-gallery .gallery-img").eq(nextSlide).text());
     });
 
     if($(".order-plan-slider").length) {
