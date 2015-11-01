@@ -97,20 +97,20 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div class="slider-cont clearfix">
 					<div class="left">
 						<h3>Площадь</h3>
-						<div class="slider" id="square-range"></div>
+						<div data-min="15" data-max="90" data-min-cur="20" data-max-cur="60" data-step="5" class="slider slider-range"></div>
 						<label>от</label>
-						<input type="text">
+						<input class="min-val" type="text" maxlength="3">
 						<label class="last">до</label>
-						<input type="text">
+						<input class="max-val" type="text" maxlength="3"> 
 						<span>м<sup>2</sup></span>
 					</div>
 					<div class="right">
 						<h3>Цена</h3>
-						<div class="slider" id="price-range"></div>
+						<div data-min="1000" data-max="9000" data-min-cur="1100" data-max-cur="5500" data-step="100" class="slider slider-range"></div>
 						<label>от</label>
-						<input type="text">
+						<input class="min-val" ype="text" maxlength="5">
 						<label class="last">до</label>
-						<input type="text">
+						<input class="max-val" type="text" maxlength="5">
 						<span>т. руб.</span>
 					</div>
 				</div>

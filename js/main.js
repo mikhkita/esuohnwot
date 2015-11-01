@@ -141,24 +141,79 @@ $(document).ready(function(){
         });
     }
 
-    $( "#square-range" ).slider({
-      range: true,
-      min: 142,
-      max: 412,
-      values: [ 150, 300 ],
-      slide: function( event, ui ) {
-        
-      }
-    });
-    $( "#price-range" ).slider({
-      range: true,
-      min: 1402,
-      max: 7000,
-      values: [ 1502, 3442 ],
-      slide: function( event, ui ) {
-        
-      }
-    });
+    function range_init() {
+        $.each($(".slider-range"),function(){
+            var obj = $(this),
+            min_input = $(this).siblings(".min-val"),
+            max_input = $(this).siblings(".max-val"),
+            // min_text = $(this).closest(".slide-type").find(".min-text"),
+            // max_text = $(this).closest(".slide-type").find(".max-text"),
+            min_val = $(this).attr("data-min")*1,
+            max_val = $(this).attr("data-max")*1,
+            cur_min_val = $(this).attr("data-min-cur") ? $(this).attr("data-min-cur")*1 : min_val,
+            cur_max_val = $(this).attr("data-max-cur") ? $(this).attr("data-max-cur")*1 : max_val,
+            data_step = $(this).attr("data-step") ? $(this).attr("data-step")*1 : 1;
+            obj.slider({
+                step: data_step,
+                range: true,
+                min: min_val,
+                max: max_val,
+                values: [ cur_min_val, cur_max_val ],
+                slide: function( event, ui ) {
+                    (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                    (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
+                    // min_text.text( ui.values[ 0 ] );
+                    // max_text.text( ui.values[ 1 ] );
 
+                },
+                change: function( event, ui ) {  
+                    (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                    (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );       
+                    // min_text.text( ui.values[ 0 ] );
+                    // max_text.text( ui.values[ 1 ] );
+                }
+            });
+            (cur_min_val == min_val) ? min_input.val('') : min_input.val( cur_min_val );
+            (cur_max_val == max_val) ? max_input.val('') : max_input.val( cur_max_val );
+            // min_text.text( cur_min_val );
+            // max_text.text( cur_max_val );
+
+            min_input.change(function() {
+            if($(this).val()=='' || (($(this).val()*1) <= min_val) )  {
+                $(this).val('');
+                obj.slider( "values", 0, min_val );
+                return true;
+            }
+            if(max_input.val()=="" && (($(this).val()*1) > max_val) ) {
+                $(this).val(max_val);
+                obj.slider( "values", 0, max_val );
+                return true;
+            }
+            if(max_input.val()!="" && (($(this).val()*1) > max_input.val()*1) ) {
+                $(this).val(max_input.val());       
+            }
+            obj.slider( "values", 0, $(this).val()*1 );
+            
+            });
+            max_input.change(function() {
+                if($(this).val()=='' || (($(this).val()*1) >= max_val) ) {
+                    $(this).val('');
+                    obj.slider( "values", 1, max_val );
+                    return true;
+                }
+                if(min_input.val()=="" && (($(this).val()*1) < min_val) ) {
+                    $(this).val(min_val);
+                    obj.slider( "values", 1, min_val );
+                    return true;
+                }
+                if(min_input.val()!="" && (($(this).val()*1) < min_input.val()*1) ) {
+                    $(this).val(min_input.val());    
+                }
+                obj.slider( "values", 1, $(this).val()*1 );
+            });
+        });
+        
+    }
+    if ($(".slider-range").length) range_init();
 
 });
