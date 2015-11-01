@@ -757,11 +757,11 @@ input:-moz-placeholder {
 					line-height: 1.4;
 					margin-top: 25px;
 				}
-				.b-desc .b-block .text-desc .left .text-list {
-				margin-left: 30px;
-				margin-top: 25px;
+				.b-desc .b-block .b-text ul {
+					margin-left: 30px;
+					margin-top: 25px;
 				}
-					.b-desc .b-block .text-desc .left .text-list li {
+					.b-desc .b-block .b-text ul li {
 						font-size: 18px;
 						font-family: "pf_bague_sans_proregular";
 						color: rgb(0, 0, 0);
