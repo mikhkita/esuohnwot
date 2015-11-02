@@ -686,7 +686,7 @@ input:-moz-placeholder {
 							letter-spacing: 1.5px;
 						}
 				.b-apartment .b-block .apartment-cont .main-desc .board {
-					margin-top: 28px;
+					margin-top: 23px;
 					background-color: #f5f4f1;
 				}
 					.b-apartment .b-block .apartment-cont .main-desc .board img {
@@ -697,6 +697,7 @@ input:-moz-placeholder {
 						margin: 15px 22px 11px;
 						box-sizing: border-box;
 						text-align: left;
+						height: 122px;
 					}
 						.b-apartment .b-block .apartment-cont .main-desc .right .top-board >div, .b-apartment .b-block .apartment-cont .main-desc .right .bot-board >div{
 							max-width: 74px;
@@ -1440,6 +1441,33 @@ margin-bottom: 45px;
 
 }
 
+.b-not-found{
+	width: 540px;
+    display: inline-block;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+	.b-not-found h1{
+		font-size: 90px;
+	    font-family: "pf_bague_sans_probold";
+	    color: #982c04;
+	}
+	.b-not-found h2{
+		font-size: 50px;
+    	font-family: "pf_bague_sans_prolight";
+	}
+	.b-not-found h3{
+		margin-top: 20px;
+    	font-size: 20px;
+	}
+		.b-not-found h3 a{
+			color: #982c04;
+    		text-decoration: underline;
+		}
+			.b-not-found h3 a:hover{
+				text-decoration: none;
+			}
 @media screen and (max-width: 1020px){
 
 }
