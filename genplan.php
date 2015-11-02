@@ -90,7 +90,112 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b-content">
 		<div class="b-genplan">
 			<div class="b-block">
-				<img src="i/genplan.jpg">
+				<img class="back" src="i/genplan.jpg">
+				<img class="numbers one point" id="r-1" src="i/1.png">
+				<img class="numbers one-a point" src="i/1a.png">
+				<img class="numbers two point" src="i/2.png">
+				<img class="numbers three point" src="i/3.png">
+				<img class="numbers four point" src="i/4.png">
+				<img class="numbers four-a point" src="i/4a.png">
+				<img class="numbers five point" src="i/5.png">
+				<span class="plan-point point" id="r-8" style="top: 39.4528%; left: 11.8625%;"></span>
+				<div class="plan-popup" data-id="r-1">
+					<div class="clearfix">
+						<h3 class="left">Квартира №8</h3>
+						<h4 class="right">Свободна</h4>
+					</div>
+					<h2>2349 тыс. руб</h2>
+					<div class="top-board clearfix">
+						<div class="first">
+							<h5>Коттедж</h5>
+							<h6>4C</h6>
+						</div>
+						<div>
+							<h5>Этажей</h5>
+							<h6>3</h6>
+						</div>
+						<div class="last">
+							<h5>Ориентация</h5>
+							<h6>4C</h6>
+						</div>
+					</div>
+					<div class="bot-board clearfix">
+						<div class="first">
+							<h5>общая<br>площадь</h5>
+							<h6>146,2 м<sup>2</sup></h6>
+						</div>
+						<div class="last">
+							<h5>площадь<br>гаража</h5>
+							<h6>146,2 м<sup>2</sup></h6>
+						</div>
+					</div>
+					<a href="#">Подробнее</a>
+				</div>
+				<div class="plan-popup" data-id="r-8">
+					<div class="clearfix">
+						<h3 class="left">Квартира №8</h3>
+						<h4 class="right">Свободна</h4>
+					</div>
+					<h2>2349 тыс. руб</h2>
+					<div class="top-board clearfix">
+						<div class="first">
+							<h5>Коттедж</h5>
+							<h6>4C</h6>
+						</div>
+						<div>
+							<h5>Этажей</h5>
+							<h6>3</h6>
+						</div>
+						<div class="last">
+							<h5>Ориентация</h5>
+							<h6>4C</h6>
+						</div>
+					</div>
+					<div class="bot-board clearfix">
+						<div class="first">
+							<h5>общая<br>площадь</h5>
+							<h6>146,2 м<sup>2</sup></h6>
+						</div>
+						<div class="last">
+							<h5>площадь<br>гаража</h5>
+							<h6>146,2 м<sup>2</sup></h6>
+						</div>
+					</div>
+					<a href="#">Подробнее</a>
+				</div>
+				<span class="plan-point point" id="r-9" style="top: 47.1532%; left: 8.7919%;"></span>
+				<div class="plan-popup" data-id="r-9">
+					<div class="clearfix">
+						<h3 class="left">Квартира №8</h3>
+						<h4 class="right">Свободна</h4>
+					</div>
+					<h2>2349 тыс. руб</h2>
+					<div class="top-board clearfix">
+						<div class="first">
+							<h5>Коттедж</h5>
+							<h6>4C</h6>
+						</div>
+						<div>
+							<h5>Этажей</h5>
+							<h6>3</h6>
+						</div>
+						<div class="last">
+							<h5>Ориентация</h5>
+							<h6>4C</h6>
+						</div>
+					</div>
+					<div class="bot-board clearfix">
+						<div class="first">
+							<h5>общая<br>площадь</h5>
+							<h6>146,2 м<sup>2</sup></h6>
+						</div>
+						<div class="last">
+							<h5>площадь<br>гаража</h5>
+							<h6>146,2 м<sup>2</sup></h6>
+						</div>
+					</div>
+					<a href="#">Подробнее</a>
+				</div>
 			</div>
 		</div>
 	</div>
