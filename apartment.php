@@ -94,7 +94,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="b-block">
 				<h2>Апартаменты</h2>
 				<div class="apartment-cont clearfix">
-					<div class="left bg-img" style="background-image: url('i/bg-img.jpg');"></div>
+					<img class="left bg-img" src="i/bg-img.jpg">
 					<div class="right main-desc">
 						<h3>ЦЕНА: 6 500 000 <span>&#8381;</span></h3>
 						<ul class="clearfix">
@@ -165,23 +165,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 							</li>
 							<li>
 								<div style="background-image: url('i/valve.png');"></div>
-								<h5>канализация</h5>
+								<h5>ЛУЖАЙКА НА ЗАДНЕМ ДВОРЕ</h5>
 							</li>
 							<li>
 								<div style="background-image: url('i/fan.png');"></div>
-								<h5>вентиляция</h5>
+								<h5>Центральная канализация</h5>
 							</li>
 							<li>
 								<div style="background-image: url('i/wood.png');"></div>
-								<h5>лужайка на заднем дворе</h5>
-							</li>
-							<li>
-								<div style="background-image: url('i/cam.png');"></div>
-								<h5>видеонаблюдение</h5>
-							</li>
-							<li>
-								<div style="background-image: url('i/secure.png');"></div>
-								<h5>охраняемая территория</h5>
+								<h5>минимальная оплата за квартиру</h5>
 							</li>
 						</ul>
 						<div class="b-text">

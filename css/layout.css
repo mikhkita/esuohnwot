@@ -644,12 +644,7 @@ input:-moz-placeholder {
 		}
 			.b-apartment .b-block .apartment-cont .bg-img {
 				width: 445px;
-				height: 450px;
-				background-size: contain;
-				background-position: 50%;
-				background-repeat: no-repeat;
 				margin-top: 10px;
-				background-color: #F7F6F2;
 			}
 			.b-apartment .b-block .apartment-cont .main-desc {
 				width: 487px;

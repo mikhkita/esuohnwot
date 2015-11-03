@@ -24,6 +24,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
@@ -44,6 +45,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/datepicker-ru.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -112,7 +114,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<div class="b-block b-plan-img clearfix">
 				<div class="left"></div>	
-				<a href="#" class="center">
+				<a href="#" class="center fancy-img" data-block="#b-popup-inf-photo" data-imgs="i/floor1.jpg,i/floor2.jpg">
 					<span></span>
 					<h3>планировка квартир</h3>
 				</a>
@@ -236,6 +238,14 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input type="submit" class="ajax b-orange-butt" value="Отправить">
 					</div>
 				</form>
+			</div>
+		</div>
+		<div id="b-popup-inf-photo">
+			<div class="for_all b-popup-gallery">
+				<h3>Фото</h3>
+				<div class="popup-gallery">
+					
+				</div>
 			</div>
 		</div>
 		<div id="b-popup-2">
