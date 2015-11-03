@@ -342,6 +342,9 @@ $(document).ready(function(){
                 });
             }
         });
-    
-    
+    $("#genplan-popups li").each(function(){
+        var id = $(this).attr("data-id");
+        $(".point[data-id='"+id+"'] .plan-popup").append($(this).html());
+    });
+    $("#genplan-popups").remove();
 });
