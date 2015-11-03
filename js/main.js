@@ -307,9 +307,7 @@ $(document).ready(function(){
 
         $(".plan-point").click(function(){
             var point = $(this);
-            $(".point.active .plan-line,.point.active .plan-popup").fadeOut(400,function(){
-                point.siblings(".plan-popup").css( "left", "-165px" );
-            });
+            var active =  $(".point.active");        
             if(!point.parent().hasClass("active")) {
                 console.log(point.parent().offset().top);
                 if(point.parent().offset().left < 175) {
@@ -320,16 +318,22 @@ $(document).ready(function(){
                     var left = 220 - (myWidth - point.parent().offset().left);
                     point.siblings(".plan-popup").css( "left", "-="+left );
                 }
-                if(point.parent().offset().top > (myHeight-420)) { 
+                if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 420 ) { 
+                    var top = 420 - (myHeight - point.parent().offset().top);
                     $("body, html").animate({
-                        scrollTop : point.parent().offset().top-100
+                        scrollTop : top
                     },800); 
                 }
                 point.parent().addClass("active");
                 point.siblings(".plan-line").slideDown(200,function(){
                     point.siblings(".plan-popup").slideDown(400);
                 });
-            } else point.parent().removeClass("active");
+            }
+            active.removeClass('active');
+            active.find('.plan-line').fadeOut(400);
+            active.find('.plan-popup').fadeOut(400,function(){
+                active.find('.plan-popup').css( "left", "-165px" );
+            });
         });
     
     
