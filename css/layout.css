@@ -570,7 +570,7 @@ input:-moz-placeholder {
 			}
 
 #map_canvas {
-	height: 632px;
+	min-height: 632px;
 }
 .map-marker {
 	text-align: left;
@@ -832,10 +832,10 @@ input:-moz-placeholder {
 			margin-top: 10px;
 			display: inline-block;
 			text-align: left;
-			margin-left: -25px;
+			margin-left: -50px;
 		}
 			.b-desc .b-block .features li {
-				width: 167px;
+				width: 223px;
 				display: inline-block;
 				box-sizing: border-box;
 				text-align: center;
@@ -1334,7 +1334,7 @@ margin-bottom: 45px;
 							font-size: 14px;
 							font-family: "pf_bague_sans_probold";
 							color: rgb(58, 32, 42);
-							font-weight: bold;
+							font-weight: normal;
 							line-height: 1.583;
 						}
 							.b-townhouse .house-list li .house-cont h6 span {

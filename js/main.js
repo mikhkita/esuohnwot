@@ -16,8 +16,9 @@ $(document).ready(function(){
             $(".b-popup-gallery").css("width",(myWidth-100)+"px").css("height",(myHeight-100)+"px");
             $(".b-popup-gallery .gallery-img").css("height",(myHeight-260)+"px");
         }
-        $(".b-content").css("min-height",myHeight-$(".b-footer").height()-$(".b-header-cont").height());
-
+        var contentHeight = myHeight-$(".b-footer").height()-$(".b-header-cont").height();
+        $(".b-content").css("min-height",contentHeight);
+        $(".b-contacts-map").css("height",contentHeight-$(".b-contacts").height());
     }
     $(window).resize(resize);
     resize();

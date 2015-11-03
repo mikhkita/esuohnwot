@@ -32,7 +32,8 @@ html, body {
 			float: left;
 			margin-top: 10px;
 		}
-		.b-popup .input-cont input[type=text] {
+		.b-popup .input-cont input[type=text],
+		.b-popup .input-cont textarea {
 			display: block;
 			float: right;
 			width: 557px;
@@ -42,6 +43,9 @@ html, body {
 			border: 1px solid rgb(58, 32, 42);
 			background-color: transparent;
 		}
+	.input-cont.radio .right{
+		float: left !important;
+	}
 	.b-popup h3,.b-popup h4{
 		font-size: 30px;
 		line-height: 1.2;
@@ -216,7 +220,7 @@ html, body {
 }
 .b-main {
 	background-size: cover;
-	background-position: 50% 0%;
+	background-position: 93% 0%;
 }
 	.b-main .b-block {
 		height: 851px;
@@ -462,6 +466,7 @@ html, body {
 						margin: 0px;
 						text-align: left;
 						float: none !important;
+						height: 290px;
 					}
 						.b-apartment .b-block .apartment-cont .main-desc .right .top-board >div, .b-apartment .b-block .apartment-cont .main-desc .right .bot-board >div{
 							max-width: 293px;
@@ -621,7 +626,7 @@ html, body {
 			padding-top: 17px;
 			margin-bottom: 40px;
 			box-sizing:border-box;
-			border-left: 1px solid #ddd7d0;
+			border-left: 0px;
 		}
 
 		.b-floor ul li:first-child {
@@ -643,7 +648,7 @@ html, body {
 				margin-top: 15px;
 				letter-spacing: 2px;
 			}
-.b-desc .b-block .text-desc .left .text-list li{
+.b-desc .b-block .b-text ul li{
 	font-size: 32px;
 }
 .b-order-plan {
@@ -652,17 +657,19 @@ html, body {
 	
 }
 	.b-order-plan .b-block {
-		background-position: 50% 40%;
+		background-position: 50%;
 		height: 763px;
 		box-sizing:border-box;
-		padding: 301px 0 0;
+		padding: 300px 0 0;
+		background-size: 530px;
+		width: 750px;
 	}
 		.b-order-plan .b-block h3 {
-			font-size: 30px;
+			font-size: 50px;
 			display: inline-block;
 			line-height: 1.2;
 			letter-spacing: 4px;
-			width: 750px;
+			/* text-shadow: 2px 2px 5px  #FFF; */
 		}
 .b-inf {
 
@@ -754,6 +761,248 @@ html, body {
 					line-height: 1.2;
 					margin-top: 20px;
 				}
+.input-cont.radio{
+	padding-left: 36px;
+}
+.order-plan-slider .arrow{
+	display: none !important;
+}
 .b-inf:first-child .fp-tableCell{
 	vertical-align: top;
 }
+
+.b-townhouse {
+	background-color: #ede9db;
+	overflow: hidden;
+}		
+	.b-townhouse .b-block {
+		text-align: left;
+		padding: 105px 0 0;
+	}
+		.b-townhouse .b-block h2 {
+		    font-size: 55px;
+		    font-family: "pf_bague_sans_prothin";
+		    color: rgb(0, 0, 0);
+		    line-height: 1.2;
+		    margin-bottom: 67px;
+		}
+		.b-townhouse .b-block .slider-cont {
+
+margin-bottom: 45px;
+
+}
+			.b-townhouse .b-block .slider-cont h3 {
+				font-size: 35px;
+				font-family: "pf_bague_sans_prolight";
+				color: rgb(58, 32, 42);
+				text-transform: uppercase;
+				line-height: 1.2;
+				letter-spacing: 2px;
+				margin-bottom: 46px;
+			}
+
+			.b-townhouse .b-block .slider-cont .slider {
+				height: 2px;
+				border:none;
+				background-color: #fff;
+				margin-bottom: 20px;
+				display: none;
+			}
+			.slider .ui-widget-header {
+				background: #70340f;
+			}
+			.slider .ui-state-default, .slider .ui-widget-content .ui-state-default, .slider .ui-widget-header .ui-state-default {
+				border:none;
+				background: none;
+				background-image: url("../i/slider-stick.png");
+				width: 13px;
+				height: 21px;
+				top: -19px;
+				border-radius: 0;
+				margin-left: -6px;
+			}
+			.b-townhouse .b-block .slider-cont label,.b-townhouse .b-block .slider-cont span {
+				font-size: 32px;
+				font-family: "pf_bague_sans_proregular";
+				color: rgb(58, 32, 42);
+				line-height: 1.2;
+				margin-right: 10px;
+			}
+			.b-townhouse .b-block .slider-cont label.last {
+				margin-left: 30px;
+			}
+			.b-townhouse .b-block .slider-cont input {
+				width: 217px;
+				font-size: 32px;
+				font-family: "pf_bague_sans_proregular";
+				color: rgb(58, 32, 42);
+				background: none;
+				border-color: #70340f;
+				box-sizing: border-box;
+				margin-right: 5px;
+				text-align: center;
+				padding: 20px 15px;
+			}
+
+			.b-townhouse .b-block .slider-cont span sup{
+				font-size: 18px;
+			}
+
+			.b-townhouse .b-block .slider-cont > .left{
+				width: 100%;
+			}
+			.b-townhouse .b-block .slider-cont > .right {
+				width: 100%;
+				margin-top: 50px;
+			}
+				.b-townhouse .b-block .slider-cont > .right input {
+					width: 217px;
+				}
+		.b-townhouse .b-block .filter {
+			margin-bottom: 68px;
+		}
+			.b-townhouse .b-block .filter span {
+				font-size: 32px;
+				font-family: "pf_bague_sans_promedium";
+				color: rgb(58, 32, 42);
+				text-transform: uppercase;
+				padding: 20px 40px;
+				background-color: #f5f4f1;
+				letter-spacing: 1.3px;
+			}
+			.b-townhouse .b-block .filter a {
+				border-bottom: 1px dashed #c1b8b2;
+				font-size: 30px;
+				font-family: "pf_bague_sans_prolight";
+				color: rgb(58, 32, 42);
+				text-transform: uppercase;
+				line-height: 1.2;
+				position: relative;
+				margin-left: 70px;
+				margin-top: 22px;
+				letter-spacing: 1px;
+			}
+			.b-townhouse .b-block .filter a:hover {
+				border-bottom: 0;
+			}
+			.b-townhouse .b-block .filter a:before {
+				position: absolute;
+				font-size: 0;
+				content: "";
+				width: 20px;
+				height: 18px;
+				background-size: 20px;
+				left: -33px;
+				top: 7px;
+				background-image: url("../i/refresh.png");
+			}
+		.b-townhouse .b-block h4 {
+			font-size: 38px;
+			font-family: "pf_bague_sans_proregular";
+			color: rgb(58, 32, 42);
+			line-height: 1.2;
+			padding-left: 74px;
+			margin-bottom: 55px;
+			position: relative;
+			margin-left: 35px;
+		}
+		.b-townhouse .b-block h4:before {
+			position: absolute;
+			font-size: 0;
+			content: "";
+			width: 58px;
+			height: 67px;
+			left: 0px;
+			top: -13px;
+			background-image: url("../i/board.png");
+		}
+		.b-townhouse .house-list {
+			width: auto;
+			margin: 0 auto;
+			padding-bottom: 65px;
+		}
+			.b-townhouse .house-list ul {		
+				padding-bottom: 60px;
+			}
+				.b-townhouse .house-list li {
+					padding-left: 35px;
+					margin-right: 30px;
+					margin-bottom: 30px;
+					float: none !important;
+					text-align: center;
+				}
+					.b-townhouse .house-list li .house-cont {
+						width: 580px;
+						background-color: #f1eee5;
+						text-align: left;
+						padding: 21px 25px 15px;
+						padding-right: 0;
+						box-sizing: border-box;
+						position: relative;
+						display: inline-block;
+						float: none !important;
+					}
+						.b-townhouse .house-list li .number {
+						position: absolute;
+						font-size: 21px;
+						font-family: "pf_bague_sans_promedium";	
+						line-height: 1.2;
+						top: 70px;
+						left: -35px;
+						color: #c2b9b3;
+					}
+							.b-townhouse .house-list li .house-cont:hover .number{
+								color: rgb(58, 32, 42);
+							}
+						.b-townhouse .house-list li .house-cont h5 {
+							font-size: 40px;
+							font-family: "pf_bague_sans_prolight";
+							color: #813004;
+							line-height: 1.2;
+							margin-bottom: 25px;
+						}
+						.b-townhouse .house-list li .house-cont h6 {
+							font-size: 32px;
+							font-family: "pf_bague_sans_probold";
+							color: rgb(58, 32, 42);
+							font-weight: bold;
+							line-height: 1.583;
+						}
+							.b-townhouse .house-list li .house-cont h6 span {
+								font-family: "pf_bague_sans_prolight";
+
+							}
+								.b-townhouse .house-list li .house-cont h6 span sup {
+									font-size: 10px;
+								}
+							.b-townhouse .house-list li .house-cont a {
+								font-size: 24px;
+								font-family: "pf_bague_sans_promedium";
+								color: #813004;
+								text-decoration: underline;
+								text-transform: uppercase;
+								margin-top: 22px;
+								display: block;
+							}
+								.b-townhouse .house-list li .house-cont a:hover {
+									text-decoration: none;
+								}
+.b-contacts {
+
+}
+	.b-contacts .b-block {
+		padding: 75px 0 100px;
+	}
+		.b-contacts .b-block h2 {
+			font-size: 55px;
+		    font-family: "pf_bague_sans_prothin";
+		    color: rgb(0, 0, 0);
+		    line-height: 1.2;
+		    margin-bottom: 45px;
+		}
+		.b-contacts .b-block h3 {
+			font-size: 20px;
+		    font-family: "pf_bague_sans_problack";
+		    text-transform: uppercase;
+		    line-height: 1.8;
+		}
