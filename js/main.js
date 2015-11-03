@@ -305,36 +305,42 @@ $(document).ready(function(){
             return false;
         });
     }
-
+        var animate = true;
         $(".plan-point").click(function(){
-            var point = $(this);
-            var active =  $(".point.active");        
-            if(!point.parent().hasClass("active")) {
-                console.log(point.parent().offset().top);
-                if(point.parent().offset().left < 175) {
-                    var left = 175 - point.parent().offset().left;
-                    point.siblings(".plan-popup").css( "left", "+="+left );
+            if(animate) {
+                animate = false;
+                var point = $(this);
+                var active =  $(".point.active");        
+                if(!point.parent().hasClass("active")) {
+                    console.log(point.parent().offset().top);
+                    if(point.parent().offset().left < 175) {
+                        var left = 175 - point.parent().offset().left;
+                        point.siblings(".plan-popup").css( "left", "+="+left );
+                    }
+                    if(point.parent().offset().left > (myWidth-220) )  {
+                        var left = 220 - (myWidth - point.parent().offset().left);
+                        point.siblings(".plan-popup").css( "left", "-="+left );
+                    }
+                    if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 420 ) { 
+                        var top = 420 - (myHeight - point.parent().offset().top);
+                        $("body, html").animate({
+                            scrollTop : top
+                        },800); 
+                    }
+                    point.parent().addClass("active");
+                    point.siblings(".plan-line").slideDown(200,function(){
+                        point.siblings(".plan-popup").slideDown(400,function(){
+                            animate = true;
+                        });
+                    });
                 }
-                if(point.parent().offset().left > (myWidth-220) )  {
-                    var left = 220 - (myWidth - point.parent().offset().left);
-                    point.siblings(".plan-popup").css( "left", "-="+left );
-                }
-                if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 420 ) { 
-                    var top = 420 - (myHeight - point.parent().offset().top);
-                    $("body, html").animate({
-                        scrollTop : top
-                    },800); 
-                }
-                point.parent().addClass("active");
-                point.siblings(".plan-line").slideDown(200,function(){
-                    point.siblings(".plan-popup").slideDown(400);
+                active.removeClass('active');
+                active.find('.plan-line').fadeOut(400);
+                active.find('.plan-popup').fadeOut(400,function(){
+                    active.find('.plan-popup').css( "left", "-165px" );
+                    animate = true;
                 });
             }
-            active.removeClass('active');
-            active.find('.plan-line').fadeOut(400);
-            active.find('.plan-popup').fadeOut(400,function(){
-                active.find('.plan-popup').css( "left", "-165px" );
-            });
         });
     
     
