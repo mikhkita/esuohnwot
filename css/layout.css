@@ -1599,7 +1599,7 @@ margin-bottom: 45px;
 			background: rgba(240,238,232,0.95);
 			width: 330px;
 			text-align: left;
-			padding: 16px;
+			padding: 25px 16px 20px;
 			top: 98px;
 			left: -165px;
 			text-transform: uppercase;
@@ -1626,7 +1626,7 @@ margin-bottom: 45px;
 				color: #58301D;
 				line-height: 37px;
 				text-transform: lowercase;
-				margin-top: 5px;
+				margin-top: 7px;
 				padding-bottom: 15px;
 				margin-bottom: 25px;
 				border-bottom: 1px solid #58301D;
@@ -1683,7 +1683,9 @@ margin-bottom: 45px;
 					font-family: "pf_bague_sans_prolight";
 					display: inline-block;
 				}
-
+				.plan-popup a:hover {
+					background-color: #8E4315;
+				}
 
 
 

@@ -312,7 +312,6 @@ $(document).ready(function(){
                 var point = $(this);
                 var active =  $(".point.active");        
                 if(!point.parent().hasClass("active")) {
-                    console.log(point.parent().offset().top);
                     if(point.parent().offset().left < 175) {
                         var left = 175 - point.parent().offset().left;
                         point.siblings(".plan-popup").css( "left", "+="+left );
@@ -321,8 +320,8 @@ $(document).ready(function(){
                         var left = 220 - (myWidth - point.parent().offset().left);
                         point.siblings(".plan-popup").css( "left", "-="+left );
                     }
-                    if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 420 ) { 
-                        var top = 420 - (myHeight - point.parent().offset().top);
+                    if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 433 ) { 
+                        var top = 433 - (myHeight - point.parent().offset().top);
                         $("body, html").animate({
                             scrollTop : top
                         },800); 
