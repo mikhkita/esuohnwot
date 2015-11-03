@@ -303,4 +303,28 @@ $(document).ready(function(){
         });
     }
 
+    $( ".plan-popup" ).dialog({
+        autoOpen: false,
+        height: 322,
+        minWidth: 365,
+        within: $(".b-genplan .b-block"),
+        show: {
+            effect: "slideDown"
+        },
+        hide: {
+            effect: "fadeOut"
+        }
+    });
+    
+    $( ".point" ).click(function() {
+        $("[data-id='"+$( ".point.active" ).attr("id")+"']").dialog( "close" );
+        if(!$(this).hasClass("active")) {
+            $( ".point.active" ).removeClass("active");
+            if($(this).offset().left < 160) {
+                $("[data-id='"+$(this).attr("id")+"']").dialog( "option", "position", { my: "center+100 top+15%",at:"bottom", of: $(this)} );
+            } else $("[data-id='"+$(this).attr("id")+"']").dialog( "option", "position", { my: "center top+15%",at:"bottom", of: $(this)} );
+            $("[data-id='"+$(this).attr("id")+"']").dialog( "open" );
+            $(this).addClass("active");
+        } else $( ".point.active" ).removeClass("active");
+    });
 });

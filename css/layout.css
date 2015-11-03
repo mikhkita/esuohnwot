@@ -1470,6 +1470,206 @@ margin-bottom: 45px;
 			.b-not-found h3 a:hover{
 				text-decoration: none;
 			}
+.b-genplan {
+
+}
+	.b-genplan .b-block {
+		width: 100%;
+		font-size: 0;
+	}
+		.b-genplan .b-block .back {
+			width: 100%;
+		}
+		.b-genplan .b-block .numbers {
+			position: absolute;
+			opacity: 0.75;
+			cursor: pointer;
+		}
+			.b-genplan .b-block .numbers:hover{
+				opacity: 1;
+			}
+		.b-genplan .b-block .one {
+			left: 14.8%;
+		    top: 35.394%;
+		    width: 6.6875%;
+		    height: 10.5973%;
+		}
+		.b-genplan .b-block .one-a {
+			left: 32%;
+		    top: 40.6551%;
+		    width: 8.8125%;
+		    height: 10.1156%;
+		}
+		.b-genplan .b-block .two {
+			left: 73.3125%;
+		    top: 45.3757%;
+		    width: 5.5625%;
+		    height: 9.6339%;
+		}
+		.b-genplan .b-block .three {
+			left: 64.4375%;
+		    top: 29.8651%;
+		    width: 5.875%;
+		    height: 8.7669%;
+		}
+		.b-genplan .b-block .four {
+			left: 20.9375%;
+		    top: 19.7495%;
+		    width: 5.8125%;
+		    height: 9.5376%;
+		}
+		.b-genplan .b-block .four-a {
+			left: 38.5625%;
+		    top: 16.474%;
+		    width: 9%;
+		    height: 9.9229%;
+		}
+		.b-genplan .b-block .five {
+			left: 73.375%;
+		    top: 17.919%;
+		    width: 6.25%;
+		    height: 9.1522%;
+		}
+		.b-genplan .b-block .plan-point {
+			position: absolute;
+			width: 1%;
+			height: 1.5414%;
+			background-image: url("../i/plan-point.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-transition-duration: 0.2s;
+			transition-duration: 0.2s;
+			-webkit-transition-property: transform;
+			transition-property: transform;
+			cursor: pointer;
+			z-index: 1000;
+			font-size: 0;
+			-webkit-transform: scale(1);
+				transform: scale(1);
+		}
+
+		.b-genplan .b-block .plan-point:hover {
+			-webkit-transform: scale(1.5);
+				transform: scale(1.5);
+		}
+		.b-genplan .b-block .plan-point.active {
+			-webkit-transform: scale(4);
+				transform: scale(4);
+		}
+		.ui-dialog-titlebar {
+		  display: none;
+		}
+		.ui-dialog {
+			border-radius: 0;
+			background:rgba(240,238,232,0.95);
+			z-index: 2000;
+
+		}
+		.ui-dialog .plan-popup{
+			background: rgba(240,238,232,0.95);
+			border: none;
+			border-radius: 0;
+			text-align: left;
+			padding: 16px;
+			text-transform: uppercase;
+			position: relative;
+			overflow: hidden;
+		}
+			.ui-dialog h3 {
+				font-family: "pf_bague_sans_prolight";
+				font-size: 14px;
+				color: #58301D;
+				line-height: 14px;
+				letter-spacing: 4px;
+			}
+			.ui-dialog h4 {
+				font-family: "pf_bague_sans_probold";
+				font-size: 14px;
+				color: #58301D;
+				line-height: 14px;
+				letter-spacing: 4px;
+			}
+			.ui-dialog h2 {
+				font-family: "pf_bague_sans_prolight";
+				font-size: 32px;
+				color: #58301D;
+				line-height: 37px;
+				text-transform: lowercase;
+				margin-top: 5px;
+				padding-bottom: 15px;
+				margin-bottom: 25px;
+				border-bottom: 1px solid #58301D;
+				letter-spacing: 1px;
+			}
+				.ui-dialog .top-board > div, .ui-dialog .bot-board > div{
+					/*max-width: 90px;*/
+					float: left;
+					padding-right: 13px;
+					padding-left: 13px;
+					border-right: 1px solid #58301D;
+				}
+				.ui-dialog .top-board .first, .ui-dialog .bot-board .first {
+					padding-left: 0;
+				}
+				.ui-dialog .top-board .last, .ui-dialog .bot-board .last {
+					border-right: none;
+					padding-right: 0;
+				}
+
+				.ui-dialog .top-board {
+					color: #58301D;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #58301D;
+				}
+				.ui-dialog .bot-board {
+					margin-top: 13px;
+					margin-bottom: 30px;
+				}
+					.ui-dialog .top-board h5,.ui-dialog .bot-board h5{
+						font-size: 12px;
+						font-family: "pf_bague_sans_proregular";
+						line-height: 1.2;
+						letter-spacing: 1.3px;
+						letter-spacing: 4px;
+					}
+					
+						.ui-dialog .top-board h6,.ui-dialog .bot-board h6{
+							font-size: 18px;
+							font-family: "pf_bague_sans_problack";
+							line-height: 1.2;
+							margin-top: 7px;
+							color: #58301D;
+						}
+							.ui-dialog .top-board h6 sup,.ui-dialog .bot-board h6 sup{
+								font-size: 10px;
+							}
+				.ui-dialog a {
+					font-size: 14px;
+					line-height: 14px;
+					letter-spacing: 4px;
+					background-color: #71340F;
+					padding: 5px 9px 4px;
+					color: #fff;
+					font-family: "pf_bague_sans_prolight";
+					display: inline-block;
+				}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1020px){
 
 }
