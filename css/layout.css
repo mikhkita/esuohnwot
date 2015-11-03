@@ -1603,7 +1603,7 @@ margin-bottom: 45px;
 			top: 98px;
 			left: -165px;
 			text-transform: uppercase;
-			height: 273px;
+			height: 295px;
 			z-index: 900;
 		}
 			.plan-popup h3 {
@@ -1667,7 +1667,7 @@ margin-bottom: 45px;
 							font-size: 18px;
 							font-family: "pf_bague_sans_problack";
 							line-height: 1.2;
-							margin-top: 7px;
+							margin-top: 15px;
 							color: #58301D;
 						}
 							.plan-popup .top-board h6 sup,.plan-popup .bot-board h6 sup{
@@ -1678,7 +1678,7 @@ margin-bottom: 45px;
 					line-height: 14px;
 					letter-spacing: 4px;
 					background-color: #71340F;
-					padding: 5px 9px 4px;
+					padding: 7px 10px 6px;
 					color: #fff;
 					font-family: "pf_bague_sans_prolight";
 					display: inline-block;

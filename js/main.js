@@ -320,8 +320,8 @@ $(document).ready(function(){
                         var left = 220 - (myWidth - point.parent().offset().left);
                         point.siblings(".plan-popup").css( "left", "-="+left );
                     }
-                    if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 433 ) { 
-                        var top = 433 - (myHeight - point.parent().offset().top);
+                    if( (myHeight + $(".b-header").offset().top - point.parent().offset().top) < 455 ) { 
+                        var top = 455 - (myHeight - point.parent().offset().top);
                         $("body, html").animate({
                             scrollTop : top
                         },800); 
