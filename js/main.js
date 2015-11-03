@@ -1,4 +1,5 @@
 $(document).ready(function(){	
+    var myWidth,myHeight;
     function resize(){
         if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -305,28 +306,32 @@ $(document).ready(function(){
         });
     }
 
-    $( ".plan-popup" ).dialog({
-        autoOpen: false,
-        height: 322,
-        minWidth: 365,
-        within: $(".b-genplan .b-block"),
-        show: {
-            effect: "slideDown"
-        },
-        hide: {
-            effect: "fadeOut"
-        }
-    });
+        $(".plan-point").click(function(){
+            var point = $(this);
+            $(".point.active .plan-line,.point.active .plan-popup").fadeOut(400,function(){
+                point.siblings(".plan-popup").css( "left", "-165px" );
+            });
+            if(!point.parent().hasClass("active")) {
+                console.log(point.parent().offset().top);
+                if(point.parent().offset().left < 175) {
+                    var left = 175 - point.parent().offset().left;
+                    point.siblings(".plan-popup").css( "left", "+="+left );
+                }
+                if(point.parent().offset().left > (myWidth-220) )  {
+                    var left = 220 - (myWidth - point.parent().offset().left);
+                    point.siblings(".plan-popup").css( "left", "-="+left );
+                }
+                if(point.parent().offset().top > (myHeight-420)) { 
+                    $("body, html").animate({
+                        scrollTop : point.parent().offset().top-100
+                    },800); 
+                }
+                point.parent().addClass("active");
+                point.siblings(".plan-line").slideDown(200,function(){
+                    point.siblings(".plan-popup").slideDown(400);
+                });
+            } else point.parent().removeClass("active");
+        });
     
-    $( ".point" ).click(function() {
-        $("[data-id='"+$( ".point.active" ).attr("id")+"']").dialog( "close" );
-        if(!$(this).hasClass("active")) {
-            $( ".point.active" ).removeClass("active");
-            if($(this).offset().left < 160) {
-                $("[data-id='"+$(this).attr("id")+"']").dialog( "option", "position", { my: "center+100 top+15%",at:"bottom", of: $(this)} );
-            } else $("[data-id='"+$(this).attr("id")+"']").dialog( "option", "position", { my: "center top+15%",at:"bottom", of: $(this)} );
-            $("[data-id='"+$(this).attr("id")+"']").dialog( "open" );
-            $(this).addClass("active");
-        } else $( ".point.active" ).removeClass("active");
-    });
+    
 });
