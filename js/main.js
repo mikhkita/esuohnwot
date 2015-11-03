@@ -21,6 +21,8 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
+    checkHash();
+
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
             $('[placeholder]').focus(function() {
@@ -66,7 +68,7 @@ $(document).ready(function(){
             zoomControl: true
         }
         var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-        var image = 'i/map-marker.png';
+        var image = '/bitrix/templates/main/i/map-marker.png';
         var marker = new MarkerWithLabel({
            position: myPlace,
            map: map,
@@ -141,79 +143,164 @@ $(document).ready(function(){
         });
     }
 
-    function range_init() {
-        $.each($(".slider-range"),function(){
-            var obj = $(this),
-            min_input = $(this).siblings(".min-val"),
-            max_input = $(this).siblings(".max-val"),
-            // min_text = $(this).closest(".slide-type").find(".min-text"),
-            // max_text = $(this).closest(".slide-type").find(".max-text"),
-            min_val = $(this).attr("data-min")*1,
-            max_val = $(this).attr("data-max")*1,
-            cur_min_val = $(this).attr("data-min-cur") ? $(this).attr("data-min-cur")*1 : min_val,
-            cur_max_val = $(this).attr("data-max-cur") ? $(this).attr("data-max-cur")*1 : max_val,
-            data_step = $(this).attr("data-step") ? $(this).attr("data-step")*1 : 1;
-            obj.slider({
-                step: data_step,
-                range: true,
-                min: min_val,
-                max: max_val,
-                values: [ cur_min_val, cur_max_val ],
-                slide: function( event, ui ) {
-                    (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
-                    (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
-                    // min_text.text( ui.values[ 0 ] );
-                    // max_text.text( ui.values[ 1 ] );
+    if( $(".b-townhouse").length ){
+        function range_init() {
+            $.each($(".slider-range"),function(){
+                var obj = $(this),
+                data_step = $(this).attr("data-step") ? $(this).attr("data-step")*1 : 1,
+                min_input = $(this).siblings(".min-val"),
+                max_input = $(this).siblings(".max-val"),
+                min_val = Math.floor($(this).attr("data-min")*1/data_step)*data_step,
+                max_val = Math.ceil($(this).attr("data-max")*1/data_step)*data_step,
+                cur_min_val = $(this).attr("data-min-cur") ? $(this).attr("data-min-cur")*1 : min_val,
+                cur_max_val = $(this).attr("data-max-cur") ? $(this).attr("data-max-cur")*1 : max_val;
+                if( cur_min_val == $(this).attr("data-min") ) cur_min_val = min_val;
+                if( cur_max_val == $(this).attr("data-max") ) cur_max_val = max_val;
+                obj.slider({
+                    step: data_step,
+                    range: true,
+                    min: min_val,
+                    max: max_val,
+                    values: [ cur_min_val, cur_max_val ],
+                    slide: function( event, ui ) {
+                        (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                        (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
 
-                },
-                change: function( event, ui ) {  
-                    (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
-                    (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );       
-                    // min_text.text( ui.values[ 0 ] );
-                    // max_text.text( ui.values[ 1 ] );
-                }
+                    },
+                    change: function( event, ui ) {  
+                        (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                        (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
+                        filter();     
+                    }
+                });
+                (cur_min_val == min_val) ? min_input.val('') : min_input.val( cur_min_val );
+                (cur_max_val == max_val) ? max_input.val('') : max_input.val( cur_max_val );
+
+                min_input.change(function() {
+                    if($(this).val()=='' || (($(this).val()*1) <= min_val) )  {
+                        $(this).val('');
+                        obj.slider( "values", 0, min_val );
+                        return true;
+                    }
+                    if(max_input.val()=="" && (($(this).val()*1) > max_val) ) {
+                        $(this).val(max_val);
+                        obj.slider( "values", 0, max_val );
+                        return true;
+                    }
+                    if(max_input.val()!="" && (($(this).val()*1) > max_input.val()*1) ) {
+                        $(this).val(max_input.val());       
+                    }
+                    obj.slider( "values", 0, $(this).val()*1 );
+                });
+                max_input.change(function() {
+                    if($(this).val()=='' || (($(this).val()*1) >= max_val) ) {
+                        $(this).val('');
+                        obj.slider( "values", 1, max_val );
+                        return true;
+                    }
+                    if(min_input.val()=="" && (($(this).val()*1) < min_val) ) {
+                        $(this).val(min_val);
+                        obj.slider( "values", 1, min_val );
+                        return true;
+                    }
+                    if(min_input.val()!="" && (($(this).val()*1) < min_input.val()*1) ) {
+                        $(this).val(min_input.val());    
+                    }
+                    obj.slider( "values", 1, $(this).val()*1 );
+                });
             });
-            (cur_min_val == min_val) ? min_input.val('') : min_input.val( cur_min_val );
-            (cur_max_val == max_val) ? max_input.val('') : max_input.val( cur_max_val );
-            // min_text.text( cur_min_val );
-            // max_text.text( cur_max_val );
-
-            min_input.change(function() {
-            if($(this).val()=='' || (($(this).val()*1) <= min_val) )  {
-                $(this).val('');
-                obj.slider( "values", 0, min_val );
-                return true;
-            }
-            if(max_input.val()=="" && (($(this).val()*1) > max_val) ) {
-                $(this).val(max_val);
-                obj.slider( "values", 0, max_val );
-                return true;
-            }
-            if(max_input.val()!="" && (($(this).val()*1) > max_input.val()*1) ) {
-                $(this).val(max_input.val());       
-            }
-            obj.slider( "values", 0, $(this).val()*1 );
             
+        }
+        range_init();
+
+        function filter(){
+            var price = {
+                min: ($(".price.min-val").val())?$(".price.min-val").val()*1:$(".price-slider").attr("data-min")*1,
+                max: ($(".price.max-val").val())?$(".price.max-val").val()*1:$(".price-slider").attr("data-max")*1
+            },
+            square = {
+                min: ($(".square.min-val").val())?$(".square.min-val").val()*1:$(".square-slider").attr("data-min")*1,
+                max: ($(".square.max-val").val())?$(".square.max-val").val()*1:$(".square-slider").attr("data-max")*1
+            },
+            hash = "square="+square.min+"-"+square.max+"&price="+price.min+"-"+price.max,
+            count = 0;
+
+            $(".b-apartments li").hide().removeClass("active");
+            $(".b-apartments li").each(function(){
+                var el = {
+                    price : $(this).attr("data-price")*1,
+                    square : $(this).attr("data-square")*1
+                };
+
+                if( el.price >= price.min && el.price <= price.max && el.square >= square.min && el.square <= square.max ){
+                    $(this).fadeIn(300).addClass("active");
+                    count++;
+                }
             });
-            max_input.change(function() {
-                if($(this).val()=='' || (($(this).val()*1) >= max_val) ) {
-                    $(this).val('');
-                    obj.slider( "values", 1, max_val );
-                    return true;
-                }
-                if(min_input.val()=="" && (($(this).val()*1) < min_val) ) {
-                    $(this).val(min_val);
-                    obj.slider( "values", 1, min_val );
-                    return true;
-                }
-                if(min_input.val()!="" && (($(this).val()*1) < min_input.val()*1) ) {
-                    $(this).val(min_input.val());    
-                }
-                obj.slider( "values", 1, $(this).val()*1 );
+
+            $(".b-house").hide();
+
+            $(".b-apartments li.active").parents(".b-house").show();
+
+            $(".count-filter").text(declOfNum(count,["Вариант","Варианта","Вариантов"]));
+
+            checkFilter();
+
+            calcNumbers();
+
+            window.location.hash = hash;
+        }
+
+        checkFilter();
+
+        filter();
+
+        function calcNumbers(){
+            // $(".b-house").each(function(){
+            //     var i = 1;
+            //     $(this).find("li.active").each(function(){
+            //         $(this).find(".number").text(i);
+            //         i++;
+            //     });
+            // });
+        }
+
+        function checkHash(){
+            if( window.location.hash != "" ){
+                var hash = window.location.hash.split("&"),
+                    square = hash[0].slice(hash[0].indexOf("=")+1,hash[0].length).split("-"),
+                    price = hash[1].slice(hash[1].indexOf("=")+1,hash[1].length).split("-");
+
+                $(".price-slider").attr("data-min-cur",price[0]).attr("data-max-cur",price[1]);
+                $(".square-slider").attr("data-min-cur",square[0]).attr("data-max-cur",square[1]);
+            }
+        }
+
+        function checkFilter(){
+            var check = false;
+            $(".min-val,.max-val").each(function(){
+                if( $(this).val() != "" ) check = true;
             });
+
+            if( check ){
+                $(".clear-filter").fadeIn(300);
+            }else{
+                $(".clear-filter").fadeOut(300);
+            }
+        }
+
+        function declOfNum(number, titles){
+            var cases = [2, 0, 1, 1, 1, 2];
+            return number+" "+titles[ (number%100 > 4 && number %100 < 20) ? 2 : cases[(number%10 < 5)?number%10:5] ];
+        }
+
+        $(".clear-filter").click(function(){
+            $(".min-val,.max-val").each(function(){
+                $(this).val("").trigger("change"); 
+            });
+            $(".b-apartments li").stop().fadeIn(300);
+            return false;
         });
-        
     }
-    if ($(".slider-range").length) range_init();
 
 });

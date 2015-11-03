@@ -649,6 +649,7 @@ input:-moz-placeholder {
 				background-position: 50%;
 				background-repeat: no-repeat;
 				margin-top: 10px;
+				background-color: #F7F6F2;
 			}
 			.b-apartment .b-block .apartment-cont .main-desc {
 				width: 487px;
@@ -1150,6 +1151,7 @@ input:-moz-placeholder {
 
 .b-townhouse {
 	background-color: #ede9db;
+	overflow: hidden;
 }		
 	.b-townhouse .b-block {
 		text-align: left;
@@ -1291,7 +1293,7 @@ margin-bottom: 45px;
 			background-image: url("../i/board.png");
 		}
 		.b-townhouse .house-list {
-			width: 1110px;
+			width: 1140px;
 			margin: 0 auto;
 			padding-bottom: 65px;
 		}
@@ -1304,9 +1306,6 @@ margin-bottom: 45px;
 					margin-bottom: 30px;
 					float: left;
 
-				}
-				.b-townhouse .house-list li:nth-child(4n) {
-					margin-right: 0;
 				}
 					.b-townhouse .house-list li .house-cont {
 						width: 220px;
@@ -1440,7 +1439,10 @@ margin-bottom: 45px;
 				}
 
 }
-
+.top-board .last h6{
+	width: 90px;
+	font-size: 17px;
+}
 .b-not-found{
 	width: 540px;
     display: inline-block;

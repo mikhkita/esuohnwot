@@ -97,228 +97,234 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div class="slider-cont clearfix">
 					<div class="left">
 						<h3>Площадь</h3>
-						<div data-min="15" data-max="90" data-min-cur="20" data-max-cur="60" data-step="5" class="slider slider-range"></div>
+						<div data-min="100" data-max="200" data-min-cur="100" data-max-cur="200" data-step="5" class="slider slider-range square-slider"></div>
 						<label>от</label>
-						<input class="min-val" type="text" maxlength="3">
+						<input class="min-val square" type="text" maxlength="3">
 						<label class="last">до</label>
-						<input class="max-val" type="text" maxlength="3"> 
+						<input class="max-val square" type="text" maxlength="3"> 
 						<span>м<sup>2</sup></span>
 					</div>
 					<div class="right">
 						<h3>Цена</h3>
-						<div data-min="1000" data-max="9000" data-min-cur="1100" data-max-cur="5500" data-step="100" class="slider slider-range"></div>
+						<div data-min="6500" data-max="9000" data-min-cur="6500" data-max-cur="9000" data-step="100" class="slider slider-range price-slider"></div>
 						<label>от</label>
-						<input class="min-val" ype="text" maxlength="5">
+						<input class="min-val price" ype="text" maxlength="5">
 						<label class="last">до</label>
-						<input class="max-val" type="text" maxlength="5">
+						<input class="max-val price" type="text" maxlength="5">
 						<span>т. руб.</span>
 					</div>
 				</div>
 				<div class="filter clearfix">
-					<span class="left">11 вариантов</span>
-					<a class="left" href="#">Сбросить фильтр</a>
+					<span class="left count-filter">11 вариантов</span>
+					<a class="left clear-filter" style="display:none;" href="#">Сбросить фильтр</a>
 				</div>
 				</form>
 			</div>
 			<div class="b-block house-list">
-				<h4>Дом №1а</h4>
-				<ul class="clearfix">
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">1</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">2</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">3</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">4</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">5</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">6</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">7</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">8</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">9</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-				</ul>
-				<h4>Дом №2а</h4>
-				<ul class="clearfix">
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">1</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">2</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">3</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">4</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">5</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">6</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">7</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">8</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-				</ul>
-				<h4>Дом №4а</h4>
-				<ul class="clearfix">
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">1</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">2</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">3</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-					<li class="clearfix">		
-						<div class="house-cont right">
-							<span class="number left">4</span>
-							<h5>1593 т. руб</h5>
-							<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
-							<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
-							<a href="#">Подробнее</a>
-						</div>
-					</li>
-				</ul>
+				<div class="b-house">
+					<h4>Дом №1а</h4>
+					<ul class="clearfix b-apartments">
+						<li class="clearfix" data-price="6500" data-square="160">		
+							<div class="house-cont right">
+								<span class="number left">1</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="6700" data-square="130">		
+							<div class="house-cont right">
+								<span class="number left">2</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8600" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">3</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8100" data-square="120">		
+							<div class="house-cont right">
+								<span class="number left">4</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8400" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">5</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="7700" data-square="200">		
+							<div class="house-cont right">
+								<span class="number left">6</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="7400" data-square="170">		
+							<div class="house-cont right">
+								<span class="number left">7</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="7200" data-square="150">		
+							<div class="house-cont right">
+								<span class="number left">8</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="6900" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">9</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="b-house">
+					<h4>Дом №2а</h4>
+					<ul class="clearfix b-apartments">
+						<li class="clearfix" data-price="7000" data-square="110">		
+							<div class="house-cont right">
+								<span class="number left">1</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="7300" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">2</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8300" data-square="100">		
+							<div class="house-cont right">
+								<span class="number left">3</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8500" data-square="120">		
+							<div class="house-cont right">
+								<span class="number left">4</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="6800" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">5</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="6900" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">6</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="7500" data-square="120">		
+							<div class="house-cont right">
+								<span class="number left">7</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="9000" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">8</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="b-house">
+					<h4>Дом №4а</h4>
+					<ul class="clearfix b-apartments">
+						<li class="clearfix" data-price="7800" data-square="140">		
+							<div class="house-cont right">
+								<span class="number left">1</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8700" data-square="130">		
+							<div class="house-cont right">
+								<span class="number left">2</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="7300" data-square="120">		
+							<div class="house-cont right">
+								<span class="number left">3</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="clearfix" data-price="8800" data-square="110">		
+							<div class="house-cont right">
+								<span class="number left">4</span>
+								<h5>1593 т. руб</h5>
+								<h6>Общая площадь: <span>147 м<sup>2</sup></span></h6>
+								<h6>Площадь гаража: <span>35,28 м<sup>2</sup></span></h6>
+								<a href="#">Подробнее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="order-plan-slider">

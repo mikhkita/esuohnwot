@@ -126,133 +126,132 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<a href="#">Индивидуальная<br>планировка</a>
 		<a href="#" class="fancy" data-block="#b-popup-order">Записаться<br>на просмотр</a>
 	</div>
-
-<div style="display:none;">
-	<div id="b-popup-callback">
-		<div class="for_all b-popup">
-			<h2>Обратная связь</h2>
-			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
-				<div class="b-popup-form">
-					<div class="input-cont clearfix">
-						<label for="name">Как к вам обращаться?</label>
-						<input type="text" id="name" name="name" required/>
+	<div style="display:none;">
+		<div id="b-popup-callback">
+			<div class="for_all b-popup">
+				<h2>Обратная связь</h2>
+				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+					<div class="b-popup-form">
+						<div class="input-cont clearfix">
+							<label for="name">Как к вам обращаться?</label>
+							<input type="text" id="name" name="name" required/>
+						</div>
+						<div class="input-cont clearfix">
+							<label for="tel">Номер телефона</label>
+							<input type="text" id="tel" name="phone" required/>
+						</div>
+						<div class="input-cont clearfix">
+							<label for="email">Ваша почта</label>
+							<input type="text" id="email" name="email"/>
+						</div>
+						<div class="input-cont clearfix">
+							<label for="question">Ваш вопрос</label>
+							<textarea type="text" id="question" name="1"></textarea>
+							<input type="hidden" name="1-name" value="Вопрос"/>
+						</div>
+						<div class="input-cont radio clearfix">
+							<input type="checkbox" id="radio-callback" name="callback">
+							<label class="right" for="radio-callback">
+		                		<span class="checked"></span>  
+		                		<h5>Заказать обратный звонок</h5>
+		            		</label>
+	            		</div>
+						<div class="input-cont clearfix" id="callback-time">
+							<label>Выбрать время</label>
+							<ul class="right radio">
+								<li>
+									<input type="radio" id="radio11" name="callback-time">
+		                    		<label for="radio11">
+		                        		<span class="checked"></span>  
+		                        		<h5>с 9 до 12</h5>
+		                    		</label>
+								</li>
+								<li>
+									<input type="radio" id="radio22" name="callback-time">
+		                    		<label for="radio22">
+		                        		<span class="checked"></span>  
+		                        		<h5>с 12 до 15</h5>
+		                    		</label>
+								</li>
+								<li>
+									<input type="radio" id="radio33" name="callback-time">
+		                    		<label for="radio33">
+		                        		<span class="checked"></span>  
+		                        		<h5>с 15 до 18</h5>
+		                    		</label>
+								</li>
+							</ul>
+						</div>
+						<input type="hidden" name="subject" value="Обратная связь"/>
+						<input type="submit" class="ajax b-orange-butt" value="Отправить">
 					</div>
-					<div class="input-cont clearfix">
-						<label for="tel">Номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
+				</form>
+			</div>
+		</div>
+		<div id="b-popup-order">
+			<div class="for_all b-popup">
+				<h2>Записаться на просмотр</h2>
+				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+					<div class="b-popup-form">
+						<div class="input-cont clearfix">
+							<label for="name2">Как к вам обращаться?</label>
+							<input type="text" id="name2" name="name" required/>
+						</div>
+						<div class="input-cont clearfix">
+							<label for="tel2">Номер телефона</label>
+							<input type="text" id="tel2" name="phone" required/>
+						</div>
+						<div class="input-cont clearfix">
+							<label for="datepicker">Выберите дату</label>
+							<input type="text" name="1" id="datepicker"/>
+							<input type="hidden" name="1-name" value="Дата"/>
+						</div>
+						<div class="input-cont clearfix">
+							<label>Выбрать время</label>
+							<ul class="right radio">
+								<li>
+									<input type="radio" id="radio1" name="time">
+		                    		<label for="radio1">
+		                        		<span class="checked"></span>  
+		                        		<h5>с 9 до 12</h5>
+		                    		</label>
+								</li>
+								<li>
+									<input type="radio" id="radio2" name="time">
+		                    		<label for="radio2">
+		                        		<span class="checked"></span>  
+		                        		<h5>с 12 до 15</h5>
+		                    		</label>
+								</li>
+								<li>
+									<input type="radio" id="radio3" name="time">
+		                    		<label for="radio3">
+		                        		<span class="checked"></span>  
+		                        		<h5>с 15 до 18</h5>
+		                    		</label>
+								</li>
+							</ul>
+						</div>
+						<input type="hidden" name="subject" value="Обратная связь"/>
+						<input type="submit" class="ajax b-orange-butt" value="Отправить">
 					</div>
-					<div class="input-cont clearfix">
-						<label for="email">Ваша почта</label>
-						<input type="text" id="email" name="email"/>
-					</div>
-					<div class="input-cont clearfix">
-						<label for="question">Ваш вопрос</label>
-						<textarea type="text" id="question" name="1"></textarea>
-						<input type="hidden" name="1-name" value="Вопрос"/>
-					</div>
-					<div class="input-cont radio clearfix">
-						<input type="checkbox" id="radio-callback" name="callback">
-						<label class="right" for="radio-callback">
-	                		<span class="checked"></span>  
-	                		<h5>Заказать обратный звонок</h5>
-	            		</label>
-            		</div>
-					<div class="input-cont clearfix" id="callback-time">
-						<label>Выбрать время</label>
-						<ul class="right radio">
-							<li>
-								<input type="radio" id="radio11" name="callback-time">
-	                    		<label for="radio11">
-	                        		<span class="checked"></span>  
-	                        		<h5>с 9 до 12</h5>
-	                    		</label>
-							</li>
-							<li>
-								<input type="radio" id="radio22" name="callback-time">
-	                    		<label for="radio22">
-	                        		<span class="checked"></span>  
-	                        		<h5>с 12 до 15</h5>
-	                    		</label>
-							</li>
-							<li>
-								<input type="radio" id="radio33" name="callback-time">
-	                    		<label for="radio33">
-	                        		<span class="checked"></span>  
-	                        		<h5>с 15 до 18</h5>
-	                    		</label>
-							</li>
-						</ul>
-					</div>
-					<input type="hidden" name="subject" value="Обратная связь"/>
-					<input type="submit" class="ajax b-orange-butt" value="Отправить">
-				</div>
-			</form>
+				</form>
+			</div>
+		</div>
+		<div id="b-popup-2">
+			<div class="b-thanks b-popup">
+				<h3>Спасибо!</h3>
+				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			</div>
+		</div>
+		<div id="b-popup-error">
+			<div class="b-thanks b-popup">
+				<h3>Ошибка отправки!</h3>
+				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			</div>
 		</div>
 	</div>
-	<div id="b-popup-order">
-		<div class="for_all b-popup">
-			<h2>Записаться на просмотр</h2>
-			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
-				<div class="b-popup-form">
-					<div class="input-cont clearfix">
-						<label for="name2">Как к вам обращаться?</label>
-						<input type="text" id="name2" name="name" required/>
-					</div>
-					<div class="input-cont clearfix">
-						<label for="tel2">Номер телефона</label>
-						<input type="text" id="tel2" name="phone" required/>
-					</div>
-					<div class="input-cont clearfix">
-						<label for="datepicker">Выберите дату</label>
-						<input type="text" name="1" id="datepicker"/>
-						<input type="hidden" name="1-name" value="Дата"/>
-					</div>
-					<div class="input-cont clearfix">
-						<label>Выбрать время</label>
-						<ul class="right radio">
-							<li>
-								<input type="radio" id="radio1" name="time">
-	                    		<label for="radio1">
-	                        		<span class="checked"></span>  
-	                        		<h5>с 9 до 12</h5>
-	                    		</label>
-							</li>
-							<li>
-								<input type="radio" id="radio2" name="time">
-	                    		<label for="radio2">
-	                        		<span class="checked"></span>  
-	                        		<h5>с 12 до 15</h5>
-	                    		</label>
-							</li>
-							<li>
-								<input type="radio" id="radio3" name="time">
-	                    		<label for="radio3">
-	                        		<span class="checked"></span>  
-	                        		<h5>с 15 до 18</h5>
-	                    		</label>
-							</li>
-						</ul>
-					</div>
-					<input type="hidden" name="subject" value="Обратная связь"/>
-					<input type="submit" class="ajax b-orange-butt" value="Отправить">
-				</div>
-			</form>
-		</div>
-	</div>
-	<div id="b-popup-2">
-		<div class="b-thanks b-popup">
-			<h3>Спасибо!</h3>
-			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-		</div>
-	</div>
-	<div id="b-popup-error">
-		<div class="b-thanks b-popup">
-			<h3>Ошибка отправки!</h3>
-			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-		</div>
-	</div>
-</div>
 </body>
 </html>
