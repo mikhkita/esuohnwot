@@ -122,6 +122,7 @@ $(document).ready(function(){
     if( $('#fullpage').length && !device.mobile() )
         $('#fullpage').fullpage({
             sectionSelector: '.b-inf',
+            verticalCentered: true,
             paddingTop: '79px'
         });
 
