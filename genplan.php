@@ -98,6 +98,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<img class="numbers four" src="i/4.png">
 				<img class="numbers four-a" src="i/4a.png">
 				<img class="numbers five" src="i/5.png">
+
+				<!-- 1 -->
+
 				<div data-id="1" class="point" style="top: 43.2360%; left: 27.1106%;">
 					<span class="plan-point"></span>
 					<span class="plan-line"></span>
@@ -148,6 +151,265 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<span class="plan-line"></span>
 					<div class="plan-popup clearfix"></div>
 				</div>
+
+				<!-- 1a -->
+
+				<div data-id="18" class="point" style="top: 47.4393%; left: 44.6588%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="19" class="point" style="top: 46.8593%; left: 42.2975%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="20" class="point" style="top: 45.6522%; left: 37%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="21" class="point" style="top: 45.01%; left: 34.5%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="22" class="point" style="top: 43.7582%; left: 29.3125%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="23" class="point" style="top: 51.5617%; left: 26.5625%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="24" class="point" style="top: 52.5453%; left: 31.93%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="25" class="point" style="top: 53.2958%; left: 34.3675%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="26" class="point" style="top: 54.6445%; left: 39.9925%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="27" class="point" style="top: 55.2225%; left: 42.43%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+
+				<!-- 2 -->
+
+				<div data-id="28" class="point" style="top: 55.8459%; left: 58.68%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="29" class="point" style="top: 56.2225%; left: 62.18%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="30" class="point" style="top: 56.4037%; left: 66.4375%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="31" class="point" style="top: 56.789%; left: 70.6575%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="32" class="point" style="top: 56.9615%; left: 74.985%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="33" class="point" style="top: 57.2726%; left: 79.25%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="34" class="point" style="top: 57.5617%; left: 83.5625%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="35" class="point" style="top: 57.7563%; left: 87.125%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+
+				<!-- 3 -->
+				
+				<div data-id="36" class="point" style="top: 41.28%; left: 86.75%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="37" class="point" style="top: 40.8794%; left: 80.7125%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="38" class="point" style="top: 40.782%; left: 78.7913%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="39" class="point" style="top: 40.3%; left: 72.7413%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="40" class="point" style="top: 40.2254%; left: 71.0038%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="41" class="point" style="top: 39.7%; left: 64.945%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="42" class="point" style="top: 39.629%; left: 63.1575%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="43" class="point" style="top: 39.1545%; left: 57.2075%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				
+				<!-- 4 -->
+
+				<div data-id="61" class="point" style="top: 20.01%; left: 32.875%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="62" class="point" style="top: 20.01%; left: 26.7269%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="63" class="point" style="top: 30.2505%; left: 25.8681%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="64" class="point" style="top: 27.5732%; left: 26.8519%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="65" class="point" style="top: 25.7428%; left: 30.7731%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+
+				<!-- 4a -->
+
+				<div data-id="51" class="point" style="top: 23.038%; left: 48.595%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="52" class="point" style="top: 22.5838%; left: 46.5325%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="53" class="point" style="top: 21.552%; left: 41.7825%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="54" class="point" style="top: 21.1667%; left: 39.7975%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="55" class="point" style="top: 20.3198%; left: 35.095%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="56" class="point" style="top: 26.2929%; left: 32.9075%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="57" class="point" style="top: 27.3526%; left: 37.7825%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="58" class="point" style="top: 27.6696%; left: 39.86%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="59" class="point" style="top: 28.8256%; left: 44.8125%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="60" class="point" style="top: 29.3073%; left: 46.9375%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+					
+				<!-- 5 -->
+
+				<div data-id="44" class="point" style="top: 15.5308%; left: 59.8125%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="45" class="point" style="top: 16.5906%; left: 63.8125%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="48" class="point" style="top: 17.3613%; left: 66.5625%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="49" class="point" style="top: 19.6734%; left: 69.4375%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="46" class="point" style="top: 22.2746%; left: 71.25%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="47" class="point" style="top: 25.0684%; left: 73.0625%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+				<div data-id="50" class="point" style="top: 27.4769%; left: 74.625%;">
+					<span class="plan-point"></span>
+					<span class="plan-line"></span>
+					<div class="plan-popup clearfix"></div>
+				</div>
+
 			</div>
 		</div>
 	</div>
