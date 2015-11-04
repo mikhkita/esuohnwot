@@ -333,14 +333,31 @@ $(document).ready(function(){
                         });
                     });
                 }
+                closeBubble(active);
+            }
+        });
+
+        function closeBubble(active){
+            if( typeof active == "undefined" ) active = $(".point.active");
                 active.removeClass('active');
                 active.find('.plan-line').fadeOut(400);
                 active.find('.plan-popup').fadeOut(400,function(){
                     active.find('.plan-popup').css( "left", "-165px" );
                     animate = true;
                 });
-            }
+        }
+
+        $("body").on("mouseup",".plan-popup,.plan-point",function(){
+            open = true;
         });
+
+        $("body").on("mousedown",function() {
+            open = false;
+        }).bind("mouseup",function(){
+            if( !open )
+                closeBubble();
+        });
+
     $("#genplan-popups li").each(function(){
         var id = $(this).attr("data-id");
         $(".point[data-id='"+id+"'] .plan-popup").append($(this).html());

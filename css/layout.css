@@ -1603,7 +1603,7 @@ margin-bottom: 45px;
 			top: 98px;
 			left: -165px;
 			text-transform: uppercase;
-			height: 295px;
+			/*height: 295px;*/
 			z-index: 900;
 		}
 			.plan-popup h3 {
@@ -1661,6 +1661,7 @@ margin-bottom: 45px;
 						line-height: 1.2;
 						letter-spacing: 1.3px;
 						letter-spacing: 4px;
+						max-width: 85px;
 					}
 					
 						.plan-popup .top-board h6,.plan-popup .bot-board h6{
