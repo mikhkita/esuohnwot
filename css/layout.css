@@ -1364,7 +1364,7 @@ margin-bottom: 45px;
 								.b-townhouse .house-list li .house-cont h6 span sup {
 									font-size: 10px;
 								}
-							.b-townhouse .house-list li .house-cont a {
+							.b-townhouse .house-list li .house-cont p {
 								font-size: 10px;
 								font-family: "pf_bague_sans_promedium";
 								color: #813004;
@@ -1373,7 +1373,7 @@ margin-bottom: 45px;
 								margin-top: 22px;
 								display: block;
 							}
-								.b-townhouse .house-list li .house-cont a:hover {
+								.b-townhouse .house-list li .house-cont p:hover {
 									text-decoration: none;
 								}
 .b-contacts {

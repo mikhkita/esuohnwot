@@ -23,8 +23,6 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
-    checkHash();
-
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
             $('[placeholder]').focus(function() {
@@ -147,6 +145,8 @@ $(document).ready(function(){
     }
 
     if( $(".b-townhouse").length ){
+        checkHash();
+
         function range_init() {
             $.each($(".slider-range"),function(){
                 var obj = $(this),
@@ -336,6 +336,10 @@ $(document).ready(function(){
                 closeBubble(active);
             }
         });
+
+        setTimeout(function(){
+            if( $(".plan-point").length ) $(".plan-point").eq(0).click();
+        },1000);
 
         function closeBubble(active){
             if( typeof active == "undefined" ) active = $(".point.active");
