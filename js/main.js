@@ -166,22 +166,27 @@ $(document).ready(function(){
                     max: max_val,
                     values: [ cur_min_val, cur_max_val ],
                     slide: function( event, ui ) {
-                        (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
-                        (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
-
+                        // (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                        // (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
+                        min_input.val( ui.values[ 0 ]);
+                        max_input.val( ui.values[ 1 ]);
                     },
                     change: function( event, ui ) {  
-                        (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
-                        (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
+                        // (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                        // (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
+                        min_input.val( ui.values[ 0 ]);
+                        max_input.val( ui.values[ 1 ]);
                         filter();     
                     }
                 });
-                (cur_min_val == min_val) ? min_input.val('') : min_input.val( cur_min_val );
-                (cur_max_val == max_val) ? max_input.val('') : max_input.val( cur_max_val );
+                // (cur_min_val == min_val) ? min_input.val('') : min_input.val( cur_min_val );
+                // (cur_max_val == max_val) ? max_input.val('') : max_input.val( cur_max_val );
+                min_input.val( cur_min_val );
+                max_input.val( cur_max_val );
 
                 min_input.change(function() {
                     if($(this).val()=='' || (($(this).val()*1) <= min_val) )  {
-                        $(this).val('');
+                        // $(this).val('');
                         obj.slider( "values", 0, min_val );
                         return true;
                     }
@@ -197,7 +202,7 @@ $(document).ready(function(){
                 });
                 max_input.change(function() {
                     if($(this).val()=='' || (($(this).val()*1) >= max_val) ) {
-                        $(this).val('');
+                        // $(this).val('');
                         obj.slider( "values", 1, max_val );
                         return true;
                     }
