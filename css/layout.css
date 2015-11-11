@@ -401,7 +401,8 @@ input:-moz-placeholder {
 				letter-spacing: 1.4px;
 				line-height: 1.2;
 			}
-				.b-header .b-menu li a:hover{
+				.b-header .b-menu li a:hover,
+				.b-header .b-menu li.active a{
 					text-decoration: underline;
 				}
 			.b-header .b-menu li:last-child a{
@@ -1687,7 +1688,47 @@ margin-bottom: 45px;
 				.plan-popup a:hover {
 					background-color: #8E4315;
 				}
+.b-genplan-popups li{
+	margin: 15px 22px 11px;
+}
+	.b-genplan-popups li .top-board >div, .b-genplan-popups li .bot-board >div{
+		max-width: 74px;
+		float: left;
+		padding-right: 17px;
+		padding-left: 17px;
+		border-right: 1px solid #cbb7a9;
+	}
+	.b-genplan-popups li .top-board .first, .b-genplan-popups li .bot-board .first {
+		padding-left: 0;
+	}
+	.b-genplan-popups li .top-board .last, .b-genplan-popups li .bot-board .last {
+		border-right: none;
+	}
 
+	.b-genplan-popups li .top-board {
+		color: #982c04;
+		padding-bottom: 9px;
+		border-bottom: 1px solid #7f2e04;
+	}
+	.b-genplan-popups li .bot-board {
+		margin-top: 13px;
+	}
+		.b-genplan-popups li h5{
+			font-size: 12px;
+			font-family: "pf_bague_sans_proregular";
+			line-height: 1.2;
+			letter-spacing: 1.3px;
+		}
+		
+			.b-genplan-popups li h6{
+				font-size: 18px;
+				font-family: "pf_bague_sans_problack";
+				line-height: 1.2;
+				margin-top: 7px;
+			}
+				.b-genplan-popups li sup{
+					font-size: 10px;
+			}
 
 
 

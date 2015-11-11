@@ -412,6 +412,107 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 			</div>
 		</div>
+		<ul id="genplan-popups" class="b-genplan-popups" style="display:none;">
+			<li data-id="1">
+				<div class="clearfix">
+					<h3 class="left">Квартира №8</h3>
+					<h4 class="right">Свободна</h4>
+				</div>
+				<h2>2349 тыс. руб</h2>
+				<div class="top-board clearfix">
+					<div class="first">
+						<h5>Коттедж</h5>
+						<h6>4C</h6>
+					</div>
+					<div>
+						<h5>Этажей</h5>
+						<h6>3</h6>
+					</div>
+					<div class="last">
+						<h5>Ориентация</h5>
+						<h6>4C</h6>
+					</div>
+				</div>
+				<div class="bot-board clearfix">
+					<div class="first">
+						<h5>общая площадь</h5>
+						<h6>146,2 м<sup>2</sup></h6>
+					</div>
+					<div class="last">
+						<h5>площадь гаража</h5>
+						<h6>146,2 м<sup>2</sup></h6>
+					</div>
+				</div>
+				<a href="#">Подробнее</a>
+			</li>
+			<li class="b-house">
+				<h2>Таунхаус 1</h2>
+			</li>
+			<li data-id="1">
+				<div class="clearfix">
+					<h3 class="left">Квартира №8</h3>
+					<h4 class="right">Свободна</h4>
+				</div>
+				<h2>2349 тыс. руб</h2>
+				<div class="top-board clearfix">
+					<div class="first">
+						<h5>Коттедж</h5>
+						<h6>4C</h6>
+					</div>
+					<div>
+						<h5>Этажей</h5>
+						<h6>3</h6>
+					</div>
+					<div class="last">
+						<h5>Ориентация</h5>
+						<h6>4C</h6>
+					</div>
+				</div>
+				<div class="bot-board clearfix">
+					<div class="first">
+						<h5>общая площадь</h5>
+						<h6>146,2 м<sup>2</sup></h6>
+					</div>
+					<div class="last">
+						<h5>площадь гаража</h5>
+						<h6>146,2 м<sup>2</sup></h6>
+					</div>
+				</div>
+				<a href="#">Подробнее</a>
+			</li>
+			<li data-id="1">
+				<div class="clearfix">
+					<h3 class="left">Квартира №8</h3>
+					<h4 class="right">Свободна</h4>
+				</div>
+				<h2>2349 тыс. руб</h2>
+				<div class="top-board clearfix">
+					<div class="first">
+						<h5>Коттедж</h5>
+						<h6>4C</h6>
+					</div>
+					<div>
+						<h5>Этажей</h5>
+						<h6>3</h6>
+					</div>
+					<div class="last">
+						<h5>Ориентация</h5>
+						<h6>4C</h6>
+					</div>
+				</div>
+				<div class="bot-board clearfix">
+					<div class="first">
+						<h5>общая площадь</h5>
+						<h6>146,2 м<sup>2</sup></h6>
+					</div>
+					<div class="last">
+						<h5>площадь гаража</h5>
+						<h6>146,2 м<sup>2</sup></h6>
+					</div>
+				</div>
+				<a href="#">Подробнее</a>
+			</li>
+		</ul>
 	</div>
 	<div class="b b-footer clearfix">
 		<a href="#" class="fancy" data-block="#b-popup-callback">Обратная<br>связь</a>
@@ -568,40 +669,6 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
 		</div>
 	</div>
-	<ul id="genplan-popups">
-		<li data-id="1">
-			<div class="clearfix">
-				<h3 class="left">Квартира №8</h3>
-				<h4 class="right">Свободна</h4>
-			</div>
-			<h2>2349 тыс. руб</h2>
-			<div class="top-board clearfix">
-				<div class="first">
-					<h5>Коттедж</h5>
-					<h6>4C</h6>
-				</div>
-				<div>
-					<h5>Этажей</h5>
-					<h6>3</h6>
-				</div>
-				<div class="last">
-					<h5>Ориентация</h5>
-					<h6>4C</h6>
-				</div>
-			</div>
-			<div class="bot-board clearfix">
-				<div class="first">
-					<h5>общая<br>площадь</h5>
-					<h6>146,2 м<sup>2</sup></h6>
-				</div>
-				<div class="last">
-					<h5>площадь<br>гаража</h5>
-					<h6>146,2 м<sup>2</sup></h6>
-				</div>
-			</div>
-			<a href="#">Подробнее</a>
-		</li>
-	</ul>
 </div>
 </body>
 </html>

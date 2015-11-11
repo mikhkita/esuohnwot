@@ -118,12 +118,12 @@ $(document).ready(function(){
     }
 
 
-    if( $('#fullpage').length && !device.mobile() )
-        $('#fullpage').fullpage({
-            sectionSelector: '.b-inf',
-            verticalCentered: true,
-            paddingTop: '79px'
-        });
+    // if( $('#fullpage').length && !device.mobile() )
+    //     $('#fullpage').fullpage({
+    //         sectionSelector: '.b-inf',
+    //         verticalCentered: true,
+    //         paddingTop: '79px'
+    //     });
 
     $("#radio-callback").change(function(){
         if($(this).prop("checked")) {
@@ -366,5 +366,5 @@ $(document).ready(function(){
         var id = $(this).attr("data-id");
         $(".point[data-id='"+id+"'] .plan-popup").append($(this).html());
     });
-    $("#genplan-popups").remove();
+    // $("#genplan-popups").remove();
 });
